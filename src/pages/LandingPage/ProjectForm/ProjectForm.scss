@@ -1,0 +1,16 @@
+.pf-container {
+  &__content {
+    display: flex;
+    justify-content: center;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    padding: 16px;
+    &--input {
+      text-align: left;
+    }
+  }
+}

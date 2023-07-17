@@ -1,0 +1,20 @@
+.header-container {
+  position: fixed;
+  top: 0;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  color: #ffffff;
+  z-index: 999;
+  &__left {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    max-width: 70%;
+  }
+  &__right {
+    max-width: 20%;
+  }
+}
