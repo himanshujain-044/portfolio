@@ -4,7 +4,7 @@ import { services } from "../../../data/services";
 const ServicesAndStrategies = () => {
   return (
     <div className="services-container">
-      <h3>Our Services</h3>
+      <h3 className="services-container__title">Services we offers</h3>
       <p className="services-container__sub-info">
         We gives the services related to Web Development, App Development and
         CMS related content with very effective and efficient way
