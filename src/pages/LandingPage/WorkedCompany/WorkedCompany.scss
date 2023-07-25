@@ -29,12 +29,10 @@
     cursor: pointer;
     border: 1px solid $border-dark-grey;
 
-    span {
       svg {
         width: 20px;
         margin-right: 8px;
       }
-    }
   }
   &__scroll {
     z-index: 1;

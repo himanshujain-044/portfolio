@@ -5,9 +5,11 @@ import landingPageVideo from "../../../assets/videos/landing-page.mp4";
 const LandingView = () => {
   return (
     <div className="lv-container">
-      <video autoPlay loop muted preload="auto">
-        <source src={landingPageVideo} type="video/mp4" />
-      </video>
+      <div className="lv-container__video">
+        <video autoPlay loop muted preload="auto">
+          <source src={landingPageVideo} type="video/mp4" />
+        </video>
+      </div>
       <div className="lv-container__heading">
         <h4>We provides multiple services </h4>
         <div>

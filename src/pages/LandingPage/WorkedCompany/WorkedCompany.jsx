@@ -4,7 +4,7 @@ import "./WorkedCompany.scss";
 const Company = ({ comDetails = {} }) => {
   return (
     <div className="wc-container__company">
-      <span>{comDetails.icon}</span>
+      {comDetails.icon}
       <span>{comDetails.name}</span>
     </div>
   );
