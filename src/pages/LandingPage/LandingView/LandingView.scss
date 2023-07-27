@@ -25,35 +25,39 @@
   &__heading {
     color: #ffffff;
     position: absolute;
-    font-family: cursive;
+    font-family:Poppins,sans-serif;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
+    width: 60%;
     h4 {
-      font-size: 24px;
-      font-weight: 700;
-      margin-bottom: 0;
-      letter-spacing: 8px;
-      word-spacing: 10px;
+      color: #CBCBCB;
       text-align: center;
-      opacity: 0.8;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+      margin-top: 28px;
     }
     &--boost-icon {
       fill: rgb(255, 255, 255);
       animation: scaleAnimation 2s ease-in-out infinite;
-      margin-top: 16px;
+      padding-top: 4px;
       svg {
-        font-size: 70px;
+        font-size: 72px;
       }
+    }
+    &--contact-btn{
+      margin-top: 24px;
     }
     div {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
       h1 {
-        font-size: 70px;
+        font-size: 74px;
+      line-height: 74px;
       }
     }
   }

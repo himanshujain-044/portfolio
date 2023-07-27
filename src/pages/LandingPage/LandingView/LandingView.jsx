@@ -2,6 +2,7 @@ import React from "react";
 import FlashOnRoundedIcon from "@mui/icons-material/FlashOnRounded";
 import "./LandingView.scss";
 import landingPageVideo from "../../../assets/videos/landing-page.mp4";
+import ButtonComp from "../../../components/ButtonComp/ButtonComp";
 const LandingView = () => {
   return (
     <div className="lv-container">
@@ -11,12 +12,19 @@ const LandingView = () => {
         </video>
       </div>
       <div className="lv-container__heading">
-        <h4>We provides multiple services </h4>
         <div>
           <span className="lv-container__heading--boost-icon">
             <FlashOnRoundedIcon />
           </span>
           <h1>Boost your business with us</h1>
+        </div>
+        <h4>
+          We provides multiple services with effective cost and efficient code,
+          and we have the best engineer with us, who will full fill your all
+          needs.
+        </h4>
+        <div className="lv-container__heading--contact-btn">
+          <ButtonComp text="Contact Us" />
         </div>
       </div>
       {/* <svg viewBox="0 0 1500 200">

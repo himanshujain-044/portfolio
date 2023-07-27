@@ -1,0 +1,14 @@
+@import "../../shared/styles/variables.scss";
+
+.button{
+    background: $blue-gradient-theme;
+    color: $color-white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: .98;
+    &:hover{
+        opacity: 1;
+    }
+}
