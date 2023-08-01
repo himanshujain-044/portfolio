@@ -1,4 +1,6 @@
+@import "../../../shared/styles/variables";
 .pf-container {
+  background-color: $bg-light-grey5;
   &__content {
     display: flex;
     justify-content: center;

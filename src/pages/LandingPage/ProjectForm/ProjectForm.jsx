@@ -11,6 +11,7 @@ import { TextareaAutosize } from "@mui/base";
 import { useState } from "react";
 import { phoneCountryCode } from "../../../data/phoneCountryCode";
 import { getFlagEmoji } from "../../../utility/common";
+import MapImage from "../../../components/MapImage/MapImage";
 const serviceType = [
   {
     text: "Mobile Application Development",
@@ -69,9 +70,8 @@ const ProjectForm = () => {
   return (
     <div className="pf-container">
       <h2>Get Ready to Start Project</h2>
-      <p>our team will reach out to you , just need to fill the below form</p>
+
       <div className="pf-container__content">
-        <div>hi</div>
         <div className="pf-container__form">
           <FormControl className="pf-container__form--input">
             <TextField
@@ -201,6 +201,9 @@ const ProjectForm = () => {
           <Button variant="contained" size="small">
             Contained
           </Button>
+        </div>
+        <div>
+          <MapImage />
         </div>
       </div>
     </div>
