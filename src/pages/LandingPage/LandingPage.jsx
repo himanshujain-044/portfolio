@@ -7,6 +7,7 @@ import ProjectForm from "./ProjectForm/ProjectForm";
 import WorkedCompany from "./WorkedCompany/WorkedCompany";
 import OurWork from "./OurWork/OurWork";
 import OurCustomer from "./OurCustomer/OurCustomer";
+import Footer from "./Footer/Footer";
 
 const LandingPage = () => {
   return (
@@ -14,10 +15,13 @@ const LandingPage = () => {
       <Header />
       <LandingView />
       <WorkedCompany />
+
       <ServicesAndStrategies />
       <OurWork />
       <OurCustomer />
       <ProjectForm />
+
+      <Footer />
     </div>
   );
 };
