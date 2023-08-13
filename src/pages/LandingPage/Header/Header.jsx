@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
+import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import "./Header.scss";
 
 const Header = () => {
@@ -20,7 +22,7 @@ const Header = () => {
   }, []);
 
   const headerStyle = {
-    backgroundColor: scrolling ? "#f00" : "", // Change to the desired colors
+    backgroundColor: scrolling ? "#1A2A3E" : "", // Change to the desired colors
     transition: "background-color 0.3s ease", // Add a smooth transition
   };
   return (
@@ -28,15 +30,15 @@ const Header = () => {
       <div className="header-container__left">
         <span>logo</span>
         <h3>Title</h3>
-        <div>
+        <div className="header-container__left--options">
           <span>option1</span>
           <span>option2</span>
           <span>option3</span>
         </div>
       </div>
       <div className="header-container__right">
-        <span>cross</span>
-        <span>menu</span>
+        <CloseOutlinedIcon />
+        <MenuOutlinedIcon />
       </div>
     </div>
   );

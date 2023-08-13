@@ -12,6 +12,7 @@ import { useState } from "react";
 import { phoneCountryCode } from "../../../data/phoneCountryCode";
 import { getFlagEmoji } from "../../../utility/common";
 import MapImage from "../../../components/MapImage/MapImage";
+import ButtonComp from "../../../components/ButtonComp/ButtonComp";
 const serviceType = [
   {
     text: "Mobile Application Development",
@@ -69,7 +70,7 @@ const ProjectForm = () => {
   });
   return (
     <div className="pf-container">
-      <h2>Get Ready to Start Project</h2>
+      <h3 className="pf-container__title">Get Ready to Start Project</h3>
 
       <div className="pf-container__content">
         <div className="pf-container__form">
@@ -80,7 +81,7 @@ const ProjectForm = () => {
               variant="outlined"
               label="Full Name"
               aria-describedby="firstName-helper-text"
-              helperText="Incorrect entry."
+              helperText={false && "Incorrect entry."}
             />
           </FormControl>
 
@@ -91,11 +92,11 @@ const ProjectForm = () => {
               variant="outlined"
               label="Email"
               aria-describedby="email-helper-text"
-              helperText="Incorrect entry."
+              helperText={false && "Incorrect entry."}
             />
           </FormControl>
           <div className="pf-container__form--input">
-            <FormControl>
+            <FormControl className="mobile-input">
               <InputLabel>Country Code</InputLabel>
               <Select
                 labelId="country-code-label"
@@ -130,14 +131,14 @@ const ProjectForm = () => {
                 ))}
               </Select>
             </FormControl>
-            <FormControl className="pf-container__form--input">
+            <FormControl>
               <TextField
                 id="phoneNumber"
                 size="small"
                 variant="outlined"
                 label="Phone Number"
                 aria-describedby="phoneNumber-helper-text"
-                helperText="Incorrect entry."
+                helperText={false && "Incorrect entry."}
               />
             </FormControl>
           </div>
@@ -193,14 +194,13 @@ const ProjectForm = () => {
               color="neutral"
               label="First Name"
               aria-describedby="firstName-helper-text"
-              helperText="Incorrect entry."
+              helperText={false && "Incorrect entry."}
               placeholder="brief about the project..."
+              className="text-area-input"
             />
           </FormControl>
 
-          <Button variant="contained" size="small">
-            Contained
-          </Button>
+          <ButtonComp text="Submit" className="no-margin" />
         </div>
         <div>
           <MapImage />

@@ -3,7 +3,7 @@
   top: 0;
   width: 90%;
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   align-items: center;
   padding: 1rem 5%;
   color: #ffffff;
@@ -12,9 +12,39 @@
     display: flex;
     gap: 2rem;
     align-items: center;
-    max-width: 70%;
+    flex: 2;
+    overflow: hidden;
+    position: relative;
+
+    &--options {
+      width: 100%;
+      position: absolute;
+      text-align: start;
+      left: 43%;
+      animation: options 2s;
+    }
+    &--options-closed {
+      animation: options-closed 2s linear;
+    }
   }
   &__right {
     max-width: 20%;
+  }
+}
+@keyframes options {
+  0% {
+    left: 90%;
+  }
+  100% {
+    left: 10%;
+  }
+}
+
+@keyframes options-closed {
+  0% {
+    left: 10%;
+  }
+  100% {
+    left: 43%;
   }
 }

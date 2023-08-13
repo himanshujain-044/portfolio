@@ -5,22 +5,57 @@
   align-items: center;
   justify-content: center;
   padding: 4rem 3rem;
-  &__title{
+  &__info {
     flex: 1;
     text-align: start;
+    &--title {
+      background: $blue-gradient-theme;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 2rem;
+    }
+    &--sub-title {
+      margin: 1rem 0;
+    }
   }
   &__work-grid {
     flex: 2;
     display: grid;
     grid-template-columns: auto auto;
+
     div {
       display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0.5rem;
+      background: white;
+      margin: 0.5rem;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 4px;
+        padding: 1px;
+        background: $blue-gradient-theme;
+        mask: linear-gradient($color-white 0 0) content-box,
+          linear-gradient($color-white 0 0);
+        -webkit-mask: linear-gradient($color-white 0 0) content-box,
+          linear-gradient($color-white 0 0);
+        mask-composite: exclude;
+        -webkit-mask-composite: xor;
+      }
+      h3,
+      span {
+        margin-top: 0.5rem !important;
+      }
       img {
-        height: 250px;
-        width: 430px;
+        background-color: $bg-light-grey3;
+        width: 100%;
         background-size: cover;
+        border-radius: 2px;
       }
     }
   }

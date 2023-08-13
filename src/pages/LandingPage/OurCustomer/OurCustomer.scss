@@ -4,27 +4,79 @@
   display: flex;
   flex-direction: column;
   padding: 4rem 3rem;
-  &__title {
+  &__upperrpart {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 2rem;
+    &--title {
+      background: $blue-gradient-theme;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 28px;
+      font-weight: 600;
+    }
+    &--icons {
+      svg {
+        background: $blue-gradient-theme;
+        background-clip: text;
+        fill: $blue-gradient-theme;
+        -webkit-text-fill-color: transparent;
+      }
+    }
   }
   &__content {
     display: flex;
-    div {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: start;
-        max-width: 250px;
-        div{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: row;
-        }
-      img {
-        width: 74px;
+    justify-content: center;
+    gap: 2rem;
+    &--box {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: start;
+      max-width: 280px;
+      max-height: 238px;
+      padding: 1rem;
+      position: relative;
+      cursor: pointer;
+      &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 4px;
+        padding: 1px;
+        background: $blue-gradient-theme;
+        mask: linear-gradient($color-white 0 0) content-box,
+          linear-gradient($color-white 0 0);
+        -webkit-mask: linear-gradient($color-white 0 0) content-box,
+          linear-gradient($color-white 0 0);
+        mask-composite: exclude;
+        -webkit-mask-composite: xor;
       }
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+      }
+      p {
+        overflow: hidden;
+        text-align: justify;
+      }
+      img {
+        width: 64px;
+      }
+    }
+    &--cus-detail {
+      display: flex;
+      flex-direction: column !important;
+      margin-left: 1rem;
+      span {
+        font-weight: 400;
+      }
+    }
+    &--busines-type {
+      color: $text-color-black;
+      opacity: 0.7;
     }
   }
 }

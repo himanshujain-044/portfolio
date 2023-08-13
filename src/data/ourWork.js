@@ -1,24 +1,26 @@
-import foodDeliveryApp from "../assets/images/food-dlvy-app.png";
+import onlineTranscationMobApp from "../assets/images/online-transcation-mob-app.png";
 import fullAuthentication from "../assets/images/full-authentication.png";
+import cakeDesignCourses from "../assets/images/cake-design-courses.png";
+import edcAdminPortal from "../assets/images/admin-portal.png";
 export const ourWork = [
   {
     title: "Authenticated Login Page",
     works: ["Website"],
-    img: fullAuthentication ,
+    img: fullAuthentication,
   },
   {
     title: "Food Delivery App",
     works: ["Mobile App"],
-    img: foodDeliveryApp ,
+    img: onlineTranscationMobApp,
   },
   {
-    title: "Authenticated Login Page",
+    title: "Cake Design Courses",
+    works: ["UX", "Website"],
+    img: cakeDesignCourses,
+  },
+  {
+    title: "EDC Admin Portals",
     works: ["Website"],
-    img: fullAuthentication ,
-  },
-  {
-    title: "Food Delivery App",
-    works: ["Mobile App"],
-    img: foodDeliveryApp ,
+    img: edcAdminPortal,
   },
 ];
