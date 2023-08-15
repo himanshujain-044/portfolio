@@ -8,7 +8,7 @@ const Footer = () => {
     <div className="footer-container">
       <div className="footer-container__detail">
         <div className="footer-container__detail--info">
-          <img src={"logo"} alt="logo" />
+          <strong className="footer-container__detail--compony-name">Jain Softwares</strong>
           <p>
             OurStudio is a digital agency UI / UX Design and Website Development
             located in Ohio, United States of America
@@ -41,7 +41,6 @@ const Footer = () => {
                 size="small"
                 variant="outlined"
                 label="email"
-                autoFocus
                 aria-describedby="phoneNumber-helper-text"
                 helperText={false && "Incorrect entry."}
               />
@@ -64,7 +63,15 @@ const Footer = () => {
       </div>
       <hr />
       <div className="footer-container__contact">
-        <strong>Google Map Location</strong>
+        <strong>
+          <a
+            href="https://goo.gl/maps/9RhJNJPY2LqWMBBw6"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Google Map Location
+          </a>
+        </strong>
         <div className="footer-container__contact--detail">
           {contactInfo.map((item) => (
             <div>

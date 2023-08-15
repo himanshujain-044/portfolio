@@ -29,6 +29,10 @@
         color: $color-blue;
       }
     }
+    &--compony-name {
+      color: $text-color-black !important;
+      font-size: 24px;
+    }
     &--input {
       div {
         display: flex;
@@ -49,6 +53,10 @@
   &__contact {
     display: flex;
     justify-content: space-between;
+    strong a {
+      text-decoration: none;
+      color: $text-color-black;
+    }
     &--detail {
       display: flex;
       gap: 1rem;

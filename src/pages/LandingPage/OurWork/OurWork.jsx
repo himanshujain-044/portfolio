@@ -1,4 +1,5 @@
 import "./OurWork.scss";
+import ArrowForwardOutlinedIcon from "@mui/icons-material/ArrowForwardOutlined";
 import ButtonComp from "../../../components/ButtonComp/ButtonComp";
 import { ourWork } from "../../../data/ourWork";
 const OurWork = () => {
@@ -24,7 +25,10 @@ const OurWork = () => {
                 ))}
               </span>
               <h3>{work.title}</h3>
-              <span>Read more icon</span>
+              <span>
+                Read More
+                <ArrowForwardOutlinedIcon />
+              </span>
             </div>
           );
         })}

@@ -11,20 +11,40 @@
   &__left {
     display: flex;
     gap: 2rem;
-    align-items: center;
+    align-items: flex-start;
     flex: 2;
     overflow: hidden;
     position: relative;
+    img {
+      width: 32px;
+    }
+    &--opts-wrap {
+      display: flex;
+      align-items: center;
+    }
+    &--company-name {
+      margin-left: 8px;
+      margin-right: 24px;
+    }
 
     &--options {
-      width: 100%;
+      width: 120%;
       position: absolute;
+      top: 8px;
       text-align: start;
-      left: 43%;
-      animation: options 2s;
+      display: none;
+      span {
+        margin-left: 8px;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.1, 1.1);
+          transition: 0.4s ease-in-out;
+        }
+      }
     }
-    &--options-closed {
-      animation: options-closed 2s linear;
+    &--options-opened {
+      animation: options 2s;
+      display: flex;
     }
   }
   &__right {
@@ -36,15 +56,15 @@
     left: 90%;
   }
   100% {
-    left: 10%;
+    left: 15%;
   }
 }
 
-@keyframes options-closed {
-  0% {
-    left: 10%;
-  }
-  100% {
-    left: 43%;
-  }
-}
+// @keyframes options-closed {
+//   0% {
+//     left: 10%;
+//   }
+//   100% {
+//     left: 110%;
+//   }
+// }

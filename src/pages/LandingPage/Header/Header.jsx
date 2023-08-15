@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
+import cx from "classnames";
+import logo from "../../../assets/logos/compnay-logo.png";
 import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import "./Header.scss";
 
 const Header = () => {
   const [scrolling, setScrolling] = useState(false);
-
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
       const threshold = 600; // Adjust this value as needed for when the color change should trigger
@@ -28,17 +30,41 @@ const Header = () => {
   return (
     <div className="header-container" style={headerStyle}>
       <div className="header-container__left">
-        <span>logo</span>
-        <h3>Title</h3>
-        <div className="header-container__left--options">
-          <span>option1</span>
-          <span>option2</span>
-          <span>option3</span>
+        <div className="header-container__left--opts-wrap">
+          <img src={logo} alt="jain_softwares" />
+          <h3 className="header-container__left--company-name">
+            Jain Softwares
+          </h3>
+          <div>
+            <div
+              className={cx(
+                "header-container__left--options",
+                isMenuOpen && "header-container__left--options-opened",
+                !isMenuOpen && "header-container__left--options-closed"
+              )}
+            >
+              <span>Home</span>
+              <span>Work</span>
+              <span>About Us</span>
+            </div>
+          </div>
         </div>
       </div>
       <div className="header-container__right">
-        <CloseOutlinedIcon />
-        <MenuOutlinedIcon />
+        {isMenuOpen && (
+          <CloseOutlinedIcon
+            onClick={() => {
+              setIsMenuOpen(false);
+            }}
+          />
+        )}
+        {!isMenuOpen && (
+          <MenuOutlinedIcon
+            onClick={() => {
+              setIsMenuOpen(true);
+            }}
+          />
+        )}
       </div>
     </div>
   );
