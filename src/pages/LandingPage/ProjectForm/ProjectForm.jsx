@@ -1,6 +1,5 @@
 import "./ProjectForm.scss";
 import {
-  Button,
   FormControl,
   InputLabel,
   MenuItem,
