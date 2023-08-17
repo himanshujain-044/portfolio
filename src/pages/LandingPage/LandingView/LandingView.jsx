@@ -4,7 +4,7 @@ import "./LandingView.scss";
 import landingPageVideo from "../../../assets/videos/landing-page.mp4";
 import ButtonComp from "../../../components/ButtonComp/ButtonComp";
 import { Typography } from "@mui/material";
-import { landingView, landingViewTitleFS } from "../../../utility/responsiveUI";
+import { landingView } from "../../../utility/responsiveUI";
 const LandingView = () => {
   return (
     <div className="lv-container">
@@ -27,10 +27,7 @@ const LandingView = () => {
             Boost your business with us
           </Typography>
         </div>
-        <Typography
-          variant="h4"
-          sx={{ fontSize: landingView.textFS }}
-        >
+        <Typography variant="h4" sx={{ fontSize: landingView.textFS }}>
           We provides multiple services with effective cost and efficient code,
           and we have the best engineer with us, who will full fill your all
           needs.

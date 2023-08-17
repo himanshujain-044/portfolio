@@ -12,14 +12,10 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
-      const threshold = 50; // Adjust this value as needed for when the color change should trigger
+      const threshold = 50;
       setScrolling(window.scrollY > threshold);
     };
-
-    // Add event listener on mount
     window.addEventListener("scroll", handleScroll);
-
-    // Clean up the event listener on unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };

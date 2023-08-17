@@ -8,7 +8,9 @@ const Footer = () => {
     <div className="footer-container">
       <div className="footer-container__detail">
         <div className="footer-container__detail--info">
-          <strong className="footer-container__detail--compony-name">Jain Softwares</strong>
+          <strong className="footer-container__detail--compony-name">
+            Jain Softwares
+          </strong>
           <p>
             OurStudio is a digital agency UI / UX Design and Website Development
             located in Ohio, United States of America
