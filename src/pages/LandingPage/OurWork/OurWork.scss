@@ -83,4 +83,16 @@
   .ow-container__work-grid {
     grid-template-columns: auto;
   }
+  .ow-container__work-grid {
+    span {
+      button {
+        padding: 12px;
+        font-size: 12px;
+      }
+    }
+    h3,
+    span {
+      font-size: 16px;
+    }
+  }
 }

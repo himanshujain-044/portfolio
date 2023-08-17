@@ -15,14 +15,15 @@
     flex: 2;
     overflow: hidden;
     position: relative;
-    img {
-      width: 32px;
-    }
+
     &--company-wrap {
       display: flex;
       align-items: center;
-      width: 40%;
+      width: 45%;
       gap: 8px;
+      img {
+        width: 32px;
+      }
     }
 
     &--options-wrap {
@@ -31,7 +32,7 @@
     }
     &--options {
       position: absolute;
-      top: 8px;
+      top: 6px;
       text-align: start;
       display: none;
       overflow: hidden;
@@ -39,6 +40,7 @@
       span {
         margin-left: 8px;
         cursor: pointer;
+        font-size: 18px;
         &:hover {
           transform: scale(1.1, 1.1);
           transition: 0.4s ease-in-out;
@@ -78,12 +80,23 @@
       width: 28px;
     }
   }
+  .header-container__left--options {
+    top: 4px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .header-container__left--company-wrap {
     img {
       width: 18px;
+    }
+    width: 60%;
+    gap: 4px;
+  }
+  .header-container__left--options {
+    top: 2px;
+    span {
+      font-size: 12px;
     }
   }
 }
