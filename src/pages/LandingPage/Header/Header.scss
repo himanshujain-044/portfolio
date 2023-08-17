@@ -18,21 +18,24 @@
     img {
       width: 32px;
     }
-    &--opts-wrap {
+    &--company-wrap {
       display: flex;
       align-items: center;
-    }
-    &--company-name {
-      margin-left: 8px;
-      margin-right: 24px;
+      width: 40%;
+      gap: 8px;
     }
 
-    &--options {
+    &--options-wrap {
+      position: relative;
       width: 120%;
+    }
+    &--options {
       position: absolute;
       top: 8px;
       text-align: start;
       display: none;
+      overflow: hidden;
+      white-space: nowrap;
       span {
         margin-left: 8px;
         cursor: pointer;
@@ -53,10 +56,10 @@
 }
 @keyframes options {
   0% {
-    left: 90%;
+    left: 100%;
   }
   100% {
-    left: 15%;
+    left: 0%;
   }
 }
 
@@ -68,3 +71,19 @@
 //     left: 110%;
 //   }
 // }
+
+@media only screen and (max-width: 900px) {
+  .header-container__left--company-wrap {
+    img {
+      width: 28px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header-container__left--company-wrap {
+    img {
+      width: 18px;
+    }
+  }
+}

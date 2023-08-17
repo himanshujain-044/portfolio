@@ -5,6 +5,7 @@ import {
   MenuItem,
   Select,
   TextField,
+  Typography,
 } from "@mui/material";
 import { TextareaAutosize } from "@mui/base";
 import { useState } from "react";
@@ -12,6 +13,7 @@ import { phoneCountryCode } from "../../../data/phoneCountryCode";
 import { getFlagEmoji } from "../../../utility/common";
 import MapImage from "../../../components/MapImage/MapImage";
 import ButtonComp from "../../../components/ButtonComp/ButtonComp";
+import { sectionTitleFS } from "../../../utility/responsiveUI";
 const serviceType = [
   {
     text: "Mobile Application Development",
@@ -69,8 +71,13 @@ const ProjectForm = () => {
   });
   return (
     <div className="pf-container">
-      <h3 className="pf-container__title">Get Ready to Start Project</h3>
-
+      <Typography
+        variant="h3"
+        sx={{ fontSize: sectionTitleFS }}
+        className="pf-container__title"
+      >
+        Get Ready to Start Project
+      </Typography>
       <div className="pf-container__content">
         <div className="pf-container__form">
           <FormControl className="pf-container__form--input">

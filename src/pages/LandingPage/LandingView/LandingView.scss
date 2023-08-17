@@ -25,20 +25,20 @@
   &__heading {
     color: #ffffff;
     position: absolute;
-    font-family:Poppins,sans-serif;
+    font-family: Poppins, sans-serif;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 60%;
     h4 {
-      color: #CBCBCB;
+      color: #cbcbcb;
       text-align: center;
       font-size: 18px;
       font-style: normal;
       font-weight: 400;
-      line-height: 30px;
       margin-top: 28px;
+      line-height: 24px;
     }
     &--boost-icon {
       fill: rgb(255, 255, 255);
@@ -48,17 +48,13 @@
         font-size: 72px;
       }
     }
-    &--contact-btn{
+    &--contact-btn {
       margin-top: 24px;
     }
     div {
       display: flex;
       align-items: flex-start;
       justify-content: center;
-      h1 {
-        font-size: 74px;
-      line-height: 74px;
-      }
     }
   }
 }
@@ -74,44 +70,19 @@
     transform: scale(1);
   }
 }
-// .content {
-//   position: relative;
-//   z-index: 1;
-//   padding: 20px;
-//   text-align: center;
-//   color: #fff;
-//   font-family: Arial, sans-serif;
-//   background-color: rgba(0, 0, 0, 0.7);
-// }
 
-// .lines-container {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   bottom: 0;
-// }
+@media only screen and (max-width: 900px) {
+  .lv-container__heading--boost-icon {
+    svg {
+      font-size: 64px;
+    }
+  }
+}
 
-// .vertical-line,
-// .horizontal-line {
-//   position: absolute;
-//   background: linear-gradient(to right, #000 50%, transparent 50%),
-//     linear-gradient(to bottom, #000 50%, transparent 50%);
-//   background-size: 10px 100%, 100% 10px;
-//   background-position: -5px 0, 0 -5px;
-//   background-repeat: repeat-x, repeat-y;
-// }
-
-// .vertical-line {
-//   top: 0;
-//   bottom: 0;
-//   width: 10px;
-//   left: calc(50% - 5px);
-// }
-
-// .horizontal-line {
-//   left: 0;
-//   right: 0;
-//   height: 10px;
-//   top: calc(50% - 5px);
-// }
+@media only screen and (max-width: 600px) {
+  .lv-container__heading--boost-icon {
+    svg {
+      font-size: 46px;
+    }
+  }
+}

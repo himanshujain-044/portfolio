@@ -4,13 +4,15 @@ import logo from "../../../assets/logos/compnay-logo.png";
 import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import "./Header.scss";
+import { Typography } from "@mui/material";
+import { header } from "../../../utility/responsiveUI";
 
 const Header = () => {
   const [scrolling, setScrolling] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
-      const threshold = 600; // Adjust this value as needed for when the color change should trigger
+      const threshold = 50; // Adjust this value as needed for when the color change should trigger
       setScrolling(window.scrollY > threshold);
     };
 
@@ -30,23 +32,27 @@ const Header = () => {
   return (
     <div className="header-container" style={headerStyle}>
       <div className="header-container__left">
-        <div className="header-container__left--opts-wrap">
+        <div className="header-container__left--company-wrap">
           <img src={logo} alt="jain_softwares" />
-          <h3 className="header-container__left--company-name">
+          <Typography
+            variant="h3"
+            sx={{ fontSize: header.companyNameFS }}
+            className="header-container__left--company-name"
+          >
             Jain Softwares
-          </h3>
-          <div>
-            <div
-              className={cx(
-                "header-container__left--options",
-                isMenuOpen && "header-container__left--options-opened",
-                !isMenuOpen && "header-container__left--options-closed"
-              )}
-            >
-              <span>Home</span>
-              <span>Work</span>
-              <span>About Us</span>
-            </div>
+          </Typography>
+        </div>
+        <div className="header-container__left--options-wrap">
+          <div
+            className={cx(
+              "header-container__left--options",
+              isMenuOpen && "header-container__left--options-opened",
+              !isMenuOpen && "header-container__left--options-closed"
+            )}
+          >
+            <span>Home</span>
+            <span>Work</span>
+            <span>About Us</span>
           </div>
         </div>
       </div>

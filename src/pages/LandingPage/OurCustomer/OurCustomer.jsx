@@ -2,14 +2,20 @@ import { ourCustomers } from "../../../data/ourCustomers";
 import ChevronLeftOutlinedIcon from "@mui/icons-material/ChevronLeftOutlined";
 import ChevronRightOutlinedIcon from "@mui/icons-material/ChevronRightOutlined";
 import "./OurCustomer.scss";
+import { Typography } from "@mui/material";
+import { sectionTitleFS } from "../../../utility/responsiveUI";
 
 const OurCustomer = () => {
   return (
     <div className="oc-container">
       <div className="oc-container__upperrpart">
-        <h3 className="oc-container__upperrpart--title">
+        <Typography
+          variant="h3"
+          sx={{ fontSize: sectionTitleFS }}
+          className="oc-container__upperrpart--title"
+        >
           Hear what our customers say : )
-        </h3>
+        </Typography>
         <span className="oc-container__upperpart--icons">
           <span>
             <ChevronLeftOutlinedIcon />

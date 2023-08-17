@@ -6,9 +6,8 @@
     background: $blue-gradient-theme;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 28px;
-    font-weight: 600;
-    margin-bottom: 2rem;
+    font-weight: 600 !important;
+    margin-bottom: 2rem !important;
   }
   &__content {
     display: flex;
@@ -47,5 +46,26 @@
     &--submit-btn {
       margin-top: 0.7rem !important;
     }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .pf-container {
+    padding: 2rem;
+  }
+  .pf-container__content {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .pf-container {
+    padding: 1rem;
+  }
+  .pf-container__form {
+    padding: 2rem 2rem;
+  }
+  .pf-container__content {
+    flex-direction: column;
   }
 }

@@ -14,9 +14,8 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     // font-family:;
-    margin: 12px 0;
-    font-size: 28px;
-    font-weight: 600;
+    margin: 12px 0 !important;
+    font-weight: 600 !important;
   }
   &__company {
     padding: 4px 16px;
@@ -29,10 +28,10 @@
     cursor: pointer;
     border: 1px solid $border-dark-grey;
 
-      svg {
-        width: 20px;
-        margin-right: 8px;
-      }
+    svg {
+      width: 20px;
+      margin-right: 8px;
+    }
   }
   &__scroll {
     z-index: 1;

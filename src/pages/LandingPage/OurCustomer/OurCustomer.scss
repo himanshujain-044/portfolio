@@ -12,8 +12,7 @@
       background: $blue-gradient-theme;
       background-clip: text;
       -webkit-text-fill-color: transparent;
-      font-size: 28px;
-      font-weight: 600;
+      font-weight: 600 !important;
     }
     &--icons {
       svg {
@@ -25,7 +24,8 @@
     }
   }
   &__content {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
     justify-content: center;
     gap: 2rem;
     &--box {
@@ -78,5 +78,25 @@
       color: $text-color-black;
       opacity: 0.7;
     }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .oc-container__content {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .oc-container__upperpart--icons {
+    display: none;
+  }
+  .oc-container__content {
+    grid-template-columns: auto auto;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .oc-container__content {
+    grid-template-columns: auto;
   }
 }

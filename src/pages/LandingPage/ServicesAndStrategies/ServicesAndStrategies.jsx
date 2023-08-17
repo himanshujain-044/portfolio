@@ -2,11 +2,19 @@ import "./ServicesAndStrategies.scss";
 import { strategies } from "../../../data/strategies";
 import { services } from "../../../data/services";
 import techsGif from "../../../assets/gifs/techs.gif";
+import { Typography } from "@mui/material";
+import { sectionTitleFS } from "../../../utility/responsiveUI";
 
 const ServicesAndStrategies = () => {
   return (
     <div className="services-container">
-      <h3 className="services-container__title">Services we offers</h3>
+      <Typography
+        variant="h3"
+        sx={{ fontSize: sectionTitleFS }}
+        className="services-container__title"
+      >
+        Services we offers
+      </Typography>
       <p className="services-container__sub-info">
         We gives the services related to Web Development, App Development and
         CMS related content with very effective and efficient way
@@ -25,7 +33,13 @@ const ServicesAndStrategies = () => {
         })}
       </div>
       <div className="services-container__strategies">
-        <h2>Why Websols Software is best for you ?</h2>
+        <Typography
+          variant="h3"
+          sx={{ fontSize: sectionTitleFS }}
+          className="services-container__strategies--title"
+        >
+          Why Websols Software is best for you ?
+        </Typography>
         <div className="services-container__strategies--details">
           <div className="services-container__strategies--techs-gif">
             <img src={techsGif} alt="" />
