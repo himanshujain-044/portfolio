@@ -90,8 +90,11 @@
     img {
       width: 18px;
     }
-    width: 60%;
+    width: 10%;
     gap: 4px;
+  }
+  .header-container__left--company-name {
+    display: none;
   }
   .header-container__left--options {
     top: 2px;
