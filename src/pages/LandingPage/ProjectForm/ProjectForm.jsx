@@ -10,8 +10,8 @@ import {
 import { TextareaAutosize } from "@mui/base";
 import { useState } from "react";
 import { phoneCountryCode } from "../../../data/phoneCountryCode";
-import { getFlagEmoji } from "../../../utility/common";
-import MapImage from "../../../components/MapImage/MapImage";
+// import { getFlagEmoji } from "../../../utility/common";
+// import MapImage from "../../../components/MapImage/MapImage";
 import ButtonComp from "../../../components/ButtonComp/ButtonComp";
 import { sectionTitleFS } from "../../../utility/responsiveUI";
 const serviceType = [
@@ -116,7 +116,11 @@ const ProjectForm = () => {
                   );
                   return (
                     <>
-                      <span>{getFlagEmoji(countryInfo.code)}</span>
+                      <img
+                        src={`https://flagcdn.com/48x36/${countryInfo.code.toLocaleLowerCase()}.png`}
+                        alt="..."
+                        width="16px"
+                      />
                       <span> {countryInfo.dial_code}</span>
                     </>
                   );
@@ -130,9 +134,18 @@ const ProjectForm = () => {
               >
                 {phoneCountryCode.map((countryCode, i) => (
                   <MenuItem value={countryCode.dial_code} key={i}>
-                    <span>{getFlagEmoji(countryCode.code)}</span>
+                    {/* <span>{getFlagEmoji(countryCode.code)}</span> */}
+
+                    <img
+                      src={`https://flagcdn.com/48x36/${countryCode.code.toLocaleLowerCase()}.png`}
+                      alt="..."
+                      width="18px"
+                      style={{ marginRight: "8px" }}
+                    />
                     <span> {countryCode.name}</span>
-                    <span> {countryCode.dial_code}</span>
+                    <span style={{ marginLeft: "8px" }}>
+                      {countryCode.dial_code}
+                    </span>
                   </MenuItem>
                 ))}
               </Select>
@@ -209,7 +222,16 @@ const ProjectForm = () => {
           <ButtonComp text="Submit" className="no-margin" />
         </div>
         <div>
-          <MapImage />
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104539.28645736807!2d78.75666759481346!3d23.869657545199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3978d10b80a73f47%3A0xbc5da3db6a37f08a!2sMakroniya%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1693153455454!5m2!1sen!2sin"
+            width="500"
+            height="100%"
+            allowfullscreen=""
+            style={{ border: "none" }}
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Makronia Sagar, M.P"
+          ></iframe>
         </div>
       </div>
     </div>

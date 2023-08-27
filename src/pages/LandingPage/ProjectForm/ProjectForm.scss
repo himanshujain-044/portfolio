@@ -2,6 +2,7 @@
 .pf-container {
   background-color: $bg-light-grey5;
   padding: 4rem;
+
   &__title {
     background: $blue-gradient-theme;
     background-clip: text;
@@ -12,6 +13,7 @@
   &__content {
     display: flex;
     justify-content: center;
+    gap: 1rem;
   }
   &__form {
     display: flex;
