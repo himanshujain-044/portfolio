@@ -22,7 +22,7 @@ const Header = () => {
   }, []);
 
   const headerStyle = {
-    backgroundColor: scrolling ? "#1A2A3E" : "", // Change to the desired colors
+    backgroundColor: scrolling ? "#1A2A3E" : "rgba(26, 42, 62, 0.9)", // Change to the desired colors
     transition: "background-color 0.3s ease", // Add a smooth transition
   };
   return (

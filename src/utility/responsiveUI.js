@@ -1,15 +1,15 @@
 export const landingView = {
   titleFS: {
-    xs: "24px",
-    sm: "36px",
-    md: "56px",
-    lg: "74px",
+    xs: "20px",
+    sm: "28px",
+    md: "38px",
+    lg: "52px",
   },
   textFS: {
-    xs: "12px",
-    sm: "18px",
-    md: "24px",
-    lg: "28px",
+    xs: "10px",
+    sm: "14px",
+    md: "18px",
+    lg: "24px",
   },
 };
 

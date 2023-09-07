@@ -1,17 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import FlashOnRoundedIcon from "@mui/icons-material/FlashOnRounded";
 import "./LandingView.scss";
-import landingPageVideo from "../../../assets/videos/landing-page.mp4";
+import landingViewImg from "../../../assets/images/landing-view.jpg";
+// import landingPageVideo from "../../../assets/videos/landing-page.mp4";
 import ButtonComp from "../../../components/ButtonComp/ButtonComp";
 import { Typography } from "@mui/material";
 import { landingView } from "../../../utility/responsiveUI";
+import LoadingSpinner from "../../../components/LoadingSpinner/LoadingSpinner";
 const LandingView = () => {
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    const img = new Image();
+    img.src = landingViewImg;
+
+    img.onload = () => {
+      setIsLoading(false);
+    };
+  }, []);
+
+  if (isLoading) {
+    return <LoadingSpinner />;
+  }
+
   return (
     <div className="lv-container">
       <div className="lv-container__video">
-        <video autoPlay loop muted preload="auto">
-          <source src={landingPageVideo} type="video/mp4" />
-        </video>
+        <img src={landingViewImg} alt="" />
       </div>
       <div className="lv-container__heading">
         <div>
