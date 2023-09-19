@@ -10,10 +10,13 @@ import {
 import { TextareaAutosize } from "@mui/base";
 import { useState } from "react";
 import { phoneCountryCode } from "../../../data/phoneCountryCode";
+import emailjs from "@emailjs/browser";
 // import { getFlagEmoji } from "../../../utility/common";
 // import MapImage from "../../../components/MapImage/MapImage";
 import ButtonComp from "../../../components/ButtonComp/ButtonComp";
 import { sectionTitleFS } from "../../../utility/responsiveUI";
+import CustomSnackbar from "../../../components/SnackbarComp/SnackbarComp";
+
 const serviceType = [
   {
     text: "Mobile Application Development",
@@ -61,6 +64,11 @@ const requirementType = [
 ];
 const ProjectForm = () => {
   //   const [selectedCountryCode, setSelectedCountryCode] = useState("+91");
+  const [snackbar, setSnackbar] = useState({
+    open: false,
+    message: "",
+    type: "error",
+  });
   const [allFormValues, setAllFormValues] = useState({
     fullName: "",
     email: "",
@@ -68,9 +76,42 @@ const ProjectForm = () => {
     countryCode: "+91",
     serviceType: "webDev",
     requirementType: "newProject",
+    description: "",
   });
+  const onFormSubmit = () => {
+    setSnackbar({
+      open: false,
+      message: "",
+      type: "success",
+    });
+    emailjs
+      .send(
+        process.env.REACT_APP_MAIL_SERVICE_ID,
+        process.env.REACT_APP_MAIL_TEMP_ID,
+        allFormValues,
+        process.env.REACT_APP_MAIL_PUBLIC_ID
+      )
+      .then(
+        (response) => {
+          setSnackbar({
+            open: true,
+            message: "Your request has been sent, Thank You !",
+            type: "success",
+          });
+        },
+        (err) => {
+          setSnackbar({
+            open: true,
+            message: "Something Went Wrong !",
+            type: "error",
+          });
+        }
+      );
+  };
+
   return (
     <div className="pf-container">
+      {snackbar.open && <CustomSnackbar message={snackbar.message} />}
       <Typography
         variant="h3"
         sx={{ fontSize: sectionTitleFS }}
@@ -88,6 +129,11 @@ const ProjectForm = () => {
               label="Full Name"
               aria-describedby="firstName-helper-text"
               helperText={false && "Incorrect entry."}
+              onChange={(e) => {
+                setAllFormValues((prev) => {
+                  return { ...prev, fullName: e.target.value };
+                });
+              }}
             />
           </FormControl>
 
@@ -99,6 +145,11 @@ const ProjectForm = () => {
               label="Email"
               aria-describedby="email-helper-text"
               helperText={false && "Incorrect entry."}
+              onChange={(e) => {
+                setAllFormValues((prev) => {
+                  return { ...prev, email: e.target.value };
+                });
+              }}
             />
           </FormControl>
           <div className="pf-container__form--input">
@@ -125,17 +176,14 @@ const ProjectForm = () => {
                     </>
                   );
                 }}
-                onChange={(e) =>
-                  setAllFormValues({
-                    ...allFormValues,
-                    countryCode: e.target.value,
-                  })
-                }
+                onChange={(e) => {
+                  setAllFormValues((prev) => {
+                    return { ...prev, countryCode: e.target.value };
+                  });
+                }}
               >
                 {phoneCountryCode.map((countryCode, i) => (
                   <MenuItem value={countryCode.dial_code} key={i}>
-                    {/* <span>{getFlagEmoji(countryCode.code)}</span> */}
-
                     <img
                       src={`https://flagcdn.com/48x36/${countryCode.code.toLocaleLowerCase()}.png`}
                       alt="..."
@@ -158,6 +206,11 @@ const ProjectForm = () => {
                 label="Phone Number"
                 aria-describedby="phoneNumber-helper-text"
                 helperText={false && "Incorrect entry."}
+                onChange={(e) => {
+                  setAllFormValues((prev) => {
+                    return { ...prev, phone: e.target.value };
+                  });
+                }}
               />
             </FormControl>
           </div>
@@ -168,12 +221,11 @@ const ProjectForm = () => {
               label="Service Type"
               size="small"
               value={allFormValues.serviceType}
-              onChange={(e) =>
-                setAllFormValues({
-                  ...allFormValues,
-                  serviceType: e.target.value,
-                })
-              }
+              onChange={(e) => {
+                setAllFormValues((prev) => {
+                  return { ...prev, serviceType: e.target.value };
+                });
+              }}
             >
               {serviceType.map((service, i) => (
                 <MenuItem value={service.value} key={i}>
@@ -190,12 +242,11 @@ const ProjectForm = () => {
               label="Requirement Type"
               size="small"
               value={allFormValues.requirementType}
-              onChange={(e) =>
-                setAllFormValues({
-                  ...allFormValues,
-                  requirementType: e.target.value,
-                })
-              }
+              onChange={(e) => {
+                setAllFormValues((prev) => {
+                  return { ...prev, requirementType: e.target.value };
+                });
+              }}
             >
               {requirementType.map((requirement, i) => (
                 <MenuItem value={requirement.value} key={i}>
@@ -207,19 +258,28 @@ const ProjectForm = () => {
 
           <FormControl className="pf-container__form--input">
             <TextareaAutosize
-              id="firstName"
+              id="description"
               size="small"
               variant="outlined"
               color="neutral"
-              label="First Name"
-              aria-describedby="firstName-helper-text"
+              label="Description"
+              aria-describedby="description-helper-text"
               helperText={false && "Incorrect entry."}
               placeholder="brief about the project..."
               className="text-area-input"
+              onChange={(e) => {
+                setAllFormValues((prev) => {
+                  return { ...prev, description: e.target.value };
+                });
+              }}
             />
           </FormControl>
 
-          <ButtonComp text="Submit" className="no-margin" />
+          <ButtonComp
+            text="Submit"
+            className="no-margin"
+            onClickEvent={onFormSubmit}
+          />
         </div>
         <div>
           <iframe
