@@ -63,12 +63,12 @@ const requirementType = [
   },
 ];
 const ProjectForm = () => {
-  //   const [selectedCountryCode, setSelectedCountryCode] = useState("+91");
   const [snackbar, setSnackbar] = useState({
     open: false,
     message: "",
     type: "error",
   });
+  const [isLoading, setIsLoading] = useState(false);
   const [allFormValues, setAllFormValues] = useState({
     fullName: "",
     email: "",
@@ -84,6 +84,7 @@ const ProjectForm = () => {
       message: "",
       type: "success",
     });
+    setIsLoading(true);
     emailjs
       .send(
         process.env.REACT_APP_MAIL_SERVICE_ID,
@@ -93,6 +94,7 @@ const ProjectForm = () => {
       )
       .then(
         (response) => {
+          setIsLoading(false);
           setSnackbar({
             open: true,
             message: "Your request has been sent, Thank You !",
@@ -100,6 +102,7 @@ const ProjectForm = () => {
           });
         },
         (err) => {
+          setIsLoading(false);
           setSnackbar({
             open: true,
             message: "Something Went Wrong !",
@@ -278,6 +281,7 @@ const ProjectForm = () => {
           <ButtonComp
             text="Submit"
             className="no-margin"
+            hasLoading={isLoading}
             onClickEvent={onFormSubmit}
           />
         </div>

@@ -80,19 +80,26 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .ow-container__work-grid {
-    grid-template-columns: auto;
-  }
-  .ow-container__work-grid {
-    span {
-      button {
-        padding: 12px;
-        font-size: 12px;
+  .ow-container {
+    padding: 1rem 0.5rem;
+    &__info {
+      &--sub-title {
+        text-align: justify;
+        margin: 1rem 0.5rem;
       }
     }
-    h3,
-    span {
-      font-size: 16px;
+    &__work-grid {
+      grid-template-columns: auto;
+      span {
+        button {
+          padding: 12px;
+          font-size: 12px;
+        }
+      }
+      h3,
+      span {
+        font-size: 16px;
+      }
     }
   }
 }

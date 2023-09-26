@@ -1,10 +1,12 @@
 import cx from "classnames";
 import "./ButtonComp.scss";
+import LoadingSpinner from "../LoadingSpinner/LoadingSpinner";
 const ButtonComp = ({
   text,
   onClickEvent = () => {},
   className = "",
   isDisabled = false,
+  hasLoading = false,
 }) => {
   return (
     <button
@@ -12,7 +14,7 @@ const ButtonComp = ({
       onClick={onClickEvent}
       disabled={isDisabled}
     >
-      {text}
+      {hasLoading ? <LoadingSpinner height="8px" size={20} /> : text}
     </button>
   );
 };

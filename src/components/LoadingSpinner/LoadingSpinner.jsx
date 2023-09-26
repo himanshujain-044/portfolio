@@ -2,18 +2,22 @@ import * as React from "react";
 import CircularProgress from "@mui/material/CircularProgress";
 import Box from "@mui/material/Box";
 
-export default function LoadingSpinner() {
+export default function LoadingSpinner({
+  height = "100vh",
+  width = "100%",
+  size = 50,
+}) {
   return (
     <Box
       sx={{
         display: "flex",
-        height: "100vh",
-        width: "100%",
+        height,
+        width,
         justifyContent: "center",
         alignItems: "center",
       }}
     >
-      <CircularProgress />
+      <CircularProgress size={size} />
     </Box>
   );
 }
