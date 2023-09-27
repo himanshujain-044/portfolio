@@ -34,7 +34,7 @@
     gap: 28px;
     text-align: justify;
     margin-bottom: 4rem;
-    padding: 12px;
+    padding: 12px 64px;
     &--content {
       h3,
       div,
@@ -177,6 +177,7 @@
       grid-template-columns: auto;
       justify-content: center;
       gap: 12px;
+      padding: 12px;
       &--content {
         h3 {
           font-size: large;

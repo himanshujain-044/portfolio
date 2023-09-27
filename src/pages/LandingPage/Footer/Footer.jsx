@@ -12,10 +12,12 @@ const Footer = () => {
             Jain Softwares
           </strong>
           <p>
-            OurStudio is a digital agency UI / UX Design and Website Development
-            located in Ohio, United States of America
+            At Jain Softwares, our unwavering commitment revolves around two
+            core pillars: Quality and Client Satisfaction. We are more than just
+            a company; we are your dedicated partners in the world of
+            Information Technology.
           </p>
-          <h5>Copyright Satyam Studio</h5>
+          <h5>© 2022. All rights reserved by Jain Softwares inc.</h5>
         </div>
         <div className="footer-container__detail--info">
           <strong>Service</strong>
