@@ -113,7 +113,7 @@ const ProjectForm = () => {
   };
 
   return (
-    <div className="pf-container">
+    <div className="pf-container" id="contact-us">
       {snackbar.open && <CustomSnackbar message={snackbar.message} />}
       <Typography
         variant="h3"

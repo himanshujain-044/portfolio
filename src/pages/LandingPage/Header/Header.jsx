@@ -3,9 +3,10 @@ import cx from "classnames";
 import logo from "../../../assets/logos/compnay-logo.png";
 import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
-import "./Header.scss";
 import { Typography } from "@mui/material";
 import { header } from "../../../utility/responsiveUI";
+// import { Link } from "react-router-dom";
+import "./Header.scss";
 
 const Header = () => {
   const [scrolling, setScrolling] = useState(false);
@@ -46,9 +47,10 @@ const Header = () => {
               !isMenuOpen && "header-container__left--options-closed"
             )}
           >
-            <span>Home</span>
-            <span>Work</span>
-            <span>About Us</span>
+            <a href="#home">Home</a>
+            <a href="#work">Work</a>
+            <a href="#contact-us">Contact Us</a>
+            <a href="#about-us">About Us</a>
           </div>
         </div>
       </div>

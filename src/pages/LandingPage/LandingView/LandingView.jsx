@@ -23,7 +23,7 @@ const LandingView = () => {
   }
 
   return (
-    <div className="lv-container">
+    <div className="lv-container" id="home">
       <div className="lv-container__video">
         <img src={landingViewImg} alt="" />
       </div>

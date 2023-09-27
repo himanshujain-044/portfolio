@@ -6,7 +6,7 @@ import { Typography } from "@mui/material";
 import { sectionTitleFS } from "../../../utility/responsiveUI";
 const OurWork = () => {
   return (
-    <div className="ow-container">
+    <div className="ow-container" id="work">
       <div className="ow-container__info">
         <Typography
           variant="h3"
