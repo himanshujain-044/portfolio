@@ -16,6 +16,7 @@ import emailjs from "@emailjs/browser";
 import ButtonComp from "../../../components/ButtonComp/ButtonComp";
 import { sectionTitleFS } from "../../../utility/responsiveUI";
 import CustomSnackbar from "../../../components/SnackbarComp/SnackbarComp";
+import ImageSlider from "../../../shared/components/ImageSlider/ImageSlider";
 
 const serviceType = [
   {
@@ -114,6 +115,7 @@ const ProjectForm = () => {
 
   return (
     <div className="pf-container" id="contact-us">
+      <ImageSlider />
       {snackbar.open && <CustomSnackbar message={snackbar.message} />}
       <Typography
         variant="h3"

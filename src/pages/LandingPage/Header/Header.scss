@@ -2,6 +2,7 @@
   position: fixed;
   top: 0;
   width: 90%;
+  height: 32px;
   display: flex;
   // justify-content: space-between;
   align-items: center;
@@ -35,7 +36,7 @@
     }
     &--options {
       position: absolute;
-      top: 6px;
+      // top: 6px;
       text-align: start;
       display: none;
       overflow: hidden;
@@ -86,7 +87,7 @@
     }
   }
   .header-container__left--options {
-    top: 4px;
+    top: -6px;
   }
 }
 
@@ -102,7 +103,7 @@
     display: none;
   }
   .header-container__left--options {
-    top: 2px;
+    top: -4px;
     a {
       font-size: 13px;
     }

@@ -38,6 +38,11 @@
     margin: 0;
     padding: 0;
   }
+  &__counters {
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0, 0.6);
+  }
 
   &__m-scroll {
     animation: scrollText 10s infinite linear;
@@ -55,5 +60,13 @@
   }
   to {
     transform: translateX(-50%);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .wc-container {
+    &__counters {
+      flex-direction: column;
+    }
   }
 }

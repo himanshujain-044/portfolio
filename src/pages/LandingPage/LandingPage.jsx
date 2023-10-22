@@ -15,12 +15,10 @@ const LandingPage = () => {
       <Header />
       <LandingView />
       <WorkedCompany />
-
       <ServicesAndStrategies />
       <OurWork />
       <OurCustomer />
       <ProjectForm />
-
       <Footer />
     </div>
   );
