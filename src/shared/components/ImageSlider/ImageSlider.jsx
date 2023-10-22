@@ -12,18 +12,17 @@ import { sectionTitleFS } from "../../../utility/responsiveUI";
 import "./ImageSlider.scss";
 
 function ImageSlider() {
-  const [people, setPeople] = useState(team);
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    const lastIndex = people.length - 1;
+    const lastIndex = team.length - 1;
     if (index < 0) {
       setIndex(lastIndex);
     }
     if (index > lastIndex) {
       setIndex(0);
     }
-  }, [index, people]);
+  }, [index]);
 
   // autoslide, clearInterval = een cleanup functie noodzakelijk bij interval
   useEffect(() => {
@@ -44,7 +43,7 @@ function ImageSlider() {
       </Typography>
 
       <div className="section-center">
-        {people.map((person, personIndex) => {
+        {team.map((person, personIndex) => {
           const { id, image, name, title, quote } = person;
           let position = "nextSlide";
           if (personIndex === index) {
@@ -52,7 +51,7 @@ function ImageSlider() {
           }
           if (
             personIndex === index - 1 ||
-            (index === 0 && personIndex === people.length - 1)
+            (index === 0 && personIndex === team.length - 1)
           ) {
             position = "lastSlide";
           }
