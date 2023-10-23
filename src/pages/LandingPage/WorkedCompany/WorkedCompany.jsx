@@ -54,6 +54,13 @@ const WorkedCompany = () => {
           ))}
         </div>
       </div>
+      {!startCount && (
+        <div className="wc-container__counters">
+          <Counter title="Completed Projects" number={0} />
+          <Counter title="Running Projects" number={0} />
+          <Counter title="Overall Clients Satisfaction" number={0} suffix="%" />
+        </div>
+      )}
       {startCount && (
         <div className="wc-container__counters">
           <Counter title="Completed Projects" number={447} />
