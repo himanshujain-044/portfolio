@@ -19,13 +19,9 @@ const WorkedCompany = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 220) {
+      if (window.scrollY > 200) {
         console.log(window.scrollY);
         setStartCount(true);
-      }
-      if (window.scrollY < 220) {
-        console.log(window.scrollY);
-        setStartCount(false);
       }
     };
     window.addEventListener("scroll", handleScroll);
