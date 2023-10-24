@@ -1,4 +1,3 @@
-import "./ProjectForm.scss";
 import {
   FormControl,
   InputLabel,
@@ -17,6 +16,8 @@ import ButtonComp from "../../../components/ButtonComp/ButtonComp";
 import { sectionTitleFS } from "../../../utility/responsiveUI";
 import CustomSnackbar from "../../../components/SnackbarComp/SnackbarComp";
 import ImageSlider from "../../../shared/components/ImageSlider/ImageSlider";
+import Slide from "react-reveal/Slide";
+import "./ProjectForm.scss";
 
 const serviceType = [
   {
@@ -115,7 +116,9 @@ const ProjectForm = () => {
 
   return (
     <div className="pf-container" id="contact-us">
-      <ImageSlider />
+      <Slide left duration={2000}>
+        <ImageSlider />
+      </Slide>
       {snackbar.open && <CustomSnackbar message={snackbar.message} />}
       <Typography
         variant="h3"
