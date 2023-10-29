@@ -149,7 +149,13 @@
     }
   }
 }
-
+.animation {
+  left: -15%;
+  position: relative;
+  transform: translate(15%, 0);
+  transition-duration: 1.5s; /* Add the desired transition duration */
+  transition-timing-function: ease-in-out;
+}
 @media only screen and (max-width: 900px) {
   .services-container {
     &__sub-info {

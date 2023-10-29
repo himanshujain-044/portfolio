@@ -1,13 +1,16 @@
-import "./ServicesAndStrategies.scss";
 import { strategies } from "../../../data/strategies";
 import { services } from "../../../data/services";
 import techsGif from "../../../assets/gifs/techs.gif";
 import { Typography } from "@mui/material";
 import { sectionTitleFS } from "../../../utility/responsiveUI";
+import { useInView } from "react-intersection-observer";
+import cx from "classnames";
+import "./ServicesAndStrategies.scss";
 
 const ServicesAndStrategies = () => {
+  const [ref, inView] = useInView({ threshold: 0.1 });
   return (
-    <div className="services-container">
+    <div className={"services-container"}>
       <Typography
         variant="h3"
         sx={{ fontSize: sectionTitleFS }}
@@ -19,7 +22,10 @@ const ServicesAndStrategies = () => {
         We gives the services related to Web Development, App Development and
         CMS related content with very effective and efficient way
       </p>
-      <div className="services-container__grid">
+      <div
+        className={cx("services-container__grid", inView && "animation")}
+        ref={ref}
+      >
         {services.map((service) => {
           return (
             <div className="services-container__grid--content">
