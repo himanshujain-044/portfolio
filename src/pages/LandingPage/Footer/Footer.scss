@@ -47,6 +47,38 @@
         }
       }
     }
+    .footer-animation-fourth {
+      left: -100vw;
+      position: relative;
+      transform: translate(100vw, 0);
+      transition-duration: 0.3s; /* Add the desired transition duration */
+      transition-timing-function: ease-in-out;
+      transition-delay: 0s;
+    }
+    .footer-animation-third {
+      left: -100vw;
+      position: relative;
+      transform: translate(100vw, 0);
+      transition-duration: 0.3s; /* Add the desired transition duration */
+      transition-timing-function: ease-in-out;
+      transition-delay: 0.3s;
+    }
+    .footer-animation-sec {
+      left: -100vw;
+      position: relative;
+      transform: translate(100vw, 0);
+      transition-duration: 0.3s; /* Add the desired transition duration */
+      transition-timing-function: ease-in-out;
+      transition-delay: 0.6s;
+    }
+    .footer-animation-first {
+      left: -100vw;
+      position: relative;
+      transform: translate(100vw, 0);
+      transition-duration: 0.3s; /* Add the desired transition duration */
+      transition-timing-function: ease-in-out;
+      transition-delay: 0.9s;
+    }
   }
   hr {
     width: 100%;
@@ -83,12 +115,76 @@
   .footer-container__detail {
     grid-template-columns: auto auto;
     gap: 4rem;
+    .footer-animation-fourth {
+      left: -100vw;
+      position: relative;
+      transform: translate(100vw, 0);
+      transition-duration: 0.3s; /* Add the desired transition duration */
+      transition-timing-function: ease-in-out;
+      transition-delay: 0.6s;
+    }
+    .footer-animation-third {
+      left: -100vw;
+      position: relative;
+      transform: translate(100vw, 0);
+      transition-duration: 0.3s; /* Add the desired transition duration */
+      transition-timing-function: ease-in-out;
+      transition-delay: 0.9s;
+    }
+    .footer-animation-sec {
+      left: -100vw;
+      position: relative;
+      transform: translate(100vw, 0);
+      transition-duration: 0.3s; /* Add the desired transition duration */
+      transition-timing-function: ease-in-out;
+      transition-delay: 0s;
+    }
+    .footer-animation-first {
+      left: -100vw;
+      position: relative;
+      transform: translate(100vw, 0);
+      transition-duration: 0.3s; /* Add the desired transition duration */
+      transition-timing-function: ease-in-out;
+      transition-delay: 0.3s;
+    }
   }
 }
 
 @media only screen and (max-width: 600px) {
   .footer-container__detail {
     grid-template-columns: auto;
+    .footer-animation-fourth {
+      left: -100vw;
+      position: relative;
+      transform: translate(100vw, 0);
+      transition-duration: 0.3s; /* Add the desired transition duration */
+      transition-timing-function: ease-in-out;
+      transition-delay: 0.9s;
+    }
+    .footer-animation-third {
+      left: -100vw;
+      position: relative;
+      transform: translate(100vw, 0);
+      transition-duration: 0.3s; /* Add the desired transition duration */
+      transition-timing-function: ease-in-out;
+      transition-delay: 0.6s;
+    }
+    .footer-animation-sec {
+      left: -100vw;
+      position: relative;
+      transform: translate(100vw, 0);
+      transition-duration: 0.3s; /* Add the desired transition duration */
+      transition-timing-function: ease-in-out;
+      transition-delay: 0.3s;
+    }
+    .footer-animation-first {
+      left: -100vw;
+      position: relative;
+      transform: translate(100vw, 0);
+      transition-duration: 0.3s; /* Add the desired transition duration */
+      transition-timing-function: ease-in-out;
+      transition-delay: 0s;
+    }
   }
   .footer-container__contact {
     font-size: 12px;

@@ -8,23 +8,35 @@ import cx from "classnames";
 import "./ServicesAndStrategies.scss";
 
 const ServicesAndStrategies = () => {
-  const [ref, inView] = useInView({ threshold: 0.1 });
+  const [cardRef, inViewCard] = useInView({ threshold: 0.1 });
+  const [strategiesRef, inViewStrategies] = useInView({ threshold: 0 });
   return (
     <div className={"services-container"}>
       <Typography
         variant="h3"
         sx={{ fontSize: sectionTitleFS }}
-        className="services-container__title"
+        className={cx(
+          "services-container__title",
+          inViewCard && "animate-charcter"
+        )}
       >
         Services we offers
       </Typography>
-      <p className="services-container__sub-info">
+      <p
+        className={cx(
+          "services-container__sub-info",
+          inViewCard && "title-animation"
+        )}
+      >
         We gives the services related to Web Development, App Development and
         CMS related content with very effective and efficient way
       </p>
       <div
-        className={cx("services-container__grid", inView && "animation")}
-        ref={ref}
+        className={cx(
+          "services-container__grid",
+          inViewCard && "cards-animation"
+        )}
+        ref={cardRef}
       >
         {services.map((service) => {
           return (
@@ -38,7 +50,13 @@ const ServicesAndStrategies = () => {
           );
         })}
       </div>
-      <div className="services-container__strategies">
+      <div
+        className={cx(
+          "services-container__strategies",
+          inViewStrategies && "strategies-animation"
+        )}
+        ref={strategiesRef}
+      >
         <Typography
           variant="h3"
           sx={{ fontSize: sectionTitleFS }}
@@ -47,10 +65,20 @@ const ServicesAndStrategies = () => {
           Why Websols Software is best for you ?
         </Typography>
         <div className="services-container__strategies--details">
-          <div className="services-container__strategies--techs-gif">
+          <div
+            className={cx(
+              "services-container__strategies--techs-gif",
+              inViewStrategies && "tech-gif-animation"
+            )}
+          >
             <img src={techsGif} alt="" />
           </div>
-          <div className="services-container__strategies--content">
+          <div
+            className={cx(
+              "services-container__strategies--content",
+              inViewStrategies && "content-animation"
+            )}
+          >
             {strategies.map((strategy) => {
               return (
                 <div>

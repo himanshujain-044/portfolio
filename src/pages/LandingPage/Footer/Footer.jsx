@@ -1,13 +1,21 @@
 import { TextField } from "@mui/material";
 import ButtonComp from "../../../components/ButtonComp/ButtonComp";
 import { contactInfo, logos } from "../../../data/footer";
+import { useInView } from "react-intersection-observer";
+import cx from "classnames";
 import "./Footer.scss";
 
 const Footer = () => {
+  const [footer, inViewFooter] = useInView({ threshold: 0 });
   return (
     <div className="footer-container" id="about-us">
-      <div className="footer-container__detail">
-        <div className="footer-container__detail--info">
+      <div className="footer-container__detail" ref={footer}>
+        <div
+          className={cx(
+            "footer-container__detail--info",
+            inViewFooter && "footer-animation-first"
+          )}
+        >
           <strong className="footer-container__detail--compony-name">
             Madhuvan Digitals
           </strong>
@@ -19,7 +27,12 @@ const Footer = () => {
           </p>
           <h5>© 2022. All rights reserved by Madhuvan Digitals inc.</h5>
         </div>
-        <div className="footer-container__detail--info">
+        <div
+          className={cx(
+            "footer-container__detail--info",
+            inViewFooter && "footer-animation-sec"
+          )}
+        >
           <strong>Service</strong>
           <span>Web Application</span>
           <span>Mobile Application</span>
@@ -27,7 +40,12 @@ const Footer = () => {
           <span>CMS Web Application</span>
           <span>Logo Design</span>
         </div>
-        <div className="footer-container__detail--info">
+        <div
+          className={cx(
+            "footer-container__detail--info",
+            inViewFooter && "footer-animation-third"
+          )}
+        >
           <strong>Company</strong>
           <span>Serives</span>
           <span>Our Team</span>
@@ -36,7 +54,12 @@ const Footer = () => {
           <span>About Us</span>
           <span>Contact Us</span>
         </div>
-        <div className="footer-container__detail--info">
+        <div
+          className={cx(
+            "footer-container__detail--info",
+            inViewFooter && "footer-animation-fourth"
+          )}
+        >
           <strong>Join with us</strong>
           <div className="footer-container__detail--input">
             <div>
