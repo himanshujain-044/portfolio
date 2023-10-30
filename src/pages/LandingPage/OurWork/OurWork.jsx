@@ -1,10 +1,12 @@
-import "./OurWork.scss";
 import ArrowForwardOutlinedIcon from "@mui/icons-material/ArrowForwardOutlined";
 import ButtonComp from "../../../components/ButtonComp/ButtonComp";
 import { ourWork } from "../../../data/ourWork";
 import { Typography } from "@mui/material";
+import { useInView } from "react-intersection-observer";
 import { sectionTitleFS } from "../../../utility/responsiveUI";
+import "./OurWork.scss";
 const OurWork = () => {
+  const [gridBoxRef, gridBoxuseInView] = useInView({ threshold: 0.1 });
   return (
     <div className="ow-container" id="work">
       <div className="ow-container__info">
@@ -25,7 +27,10 @@ const OurWork = () => {
       <div className="ow-container__work-grid">
         {ourWork.map((work) => {
           return (
-            <div>
+            <div
+              className={gridBoxuseInView && "zoom-out-grid-box"}
+              ref={gridBoxRef}
+            >
               <img src={work.img} alt={work.title} />
               <span>
                 {work.works.map((workType, index) => (

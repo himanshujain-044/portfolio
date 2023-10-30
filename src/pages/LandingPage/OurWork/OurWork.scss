@@ -68,6 +68,18 @@
         border-radius: 2px;
       }
     }
+    .zoom-out-grid-box {
+      animation: zoom-out 1.5s ease-in-out;
+    }
+  }
+}
+
+@keyframes zoom-out {
+  0% {
+    transform: scale(0.3, 0.3);
+  }
+  100% {
+    transform: scale(1, 1);
   }
 }
 @media only screen and (max-width: 900px) {

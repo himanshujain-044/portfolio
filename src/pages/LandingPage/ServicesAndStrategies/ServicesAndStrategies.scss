@@ -260,6 +260,8 @@
       justify-content: center;
       gap: 12px;
       padding: 12px;
+      max-height: 576px;
+      overflow: auto;
       &--content {
         h3 {
           font-size: large;
