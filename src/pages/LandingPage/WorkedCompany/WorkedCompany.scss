@@ -28,9 +28,12 @@
     cursor: pointer;
     border: 1px solid $border-dark-grey;
 
-    svg {
-      width: 20px;
+    img {
+      width: 40px;
       margin-right: 8px;
+    }
+    span {
+      width: max-content;
     }
   }
   &__scroll {

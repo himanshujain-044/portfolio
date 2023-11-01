@@ -6,9 +6,9 @@ import { useInView } from "react-intersection-observer";
 import { sectionTitleFS } from "../../../utility/responsiveUI";
 import "./OurWork.scss";
 const OurWork = () => {
-  const [gridBoxRef, gridBoxuseInView] = useInView({ threshold: 0.1 });
+  const [gridBoxRef, gridBoxuseInView] = useInView({ threshold: 0 });
   return (
-    <div className="ow-container" id="work">
+    <div className="ow-container" id="work" ref={gridBoxRef}>
       <div className="ow-container__info">
         <Typography
           variant="h3"
@@ -27,10 +27,7 @@ const OurWork = () => {
       <div className="ow-container__work-grid">
         {ourWork.map((work) => {
           return (
-            <div
-              className={gridBoxuseInView && "zoom-out-grid-box"}
-              ref={gridBoxRef}
-            >
+            <div className={gridBoxuseInView && "zoom-out-grid-box"}>
               <img src={work.img} alt={work.title} />
               <span>
                 {work.works.map((workType, index) => (

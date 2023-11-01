@@ -8,7 +8,8 @@ import Counter from "../../../shared/components/Counter/Counter";
 const Company = ({ comDetails = {} }) => {
   return (
     <div className="wc-container__company">
-      {comDetails.icon}
+      {/* {comDetails.icon} */}
+      <img src={comDetails.icon} alt="" width="45px" />
       <span>{comDetails.name}</span>
     </div>
   );

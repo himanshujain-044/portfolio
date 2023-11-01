@@ -54,7 +54,9 @@ const LandingView = () => {
           needs.
         </Typography>
         <div className="lv-container__heading--contact-btn">
-          <ButtonComp text="Contact Us" />
+          <a href="#contact-us">
+            <ButtonComp text="Contact Us" />
+          </a>
         </div>
       </div>
     </div>
