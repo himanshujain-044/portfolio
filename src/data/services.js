@@ -8,32 +8,32 @@ import webAppMaintenance from "../assets/images/web-and-app-maintenance.png";
 export const services = [
   {
     title: "Web Development",
-    desc: "We provide the We provide the fast web We provide the fast web We provide the ",
+    desc: "We provide comprehensive web development services, specializing in custom solutions, utilizing the latest technologies and delivering tailored, impactful websites and applications.",
     img: webDev,
   },
   {
     title: "App Development",
-    desc: "We provide the We provide the We provide the fast web We provide the fast web ",
+    desc: "We offer expert app development solutions, leveraging cutting-edge technologies to create customized, user-centric mobile applications for businesses and organizations.",
     img: appDev,
   },
   {
     title: "CMS Website Development",
-    desc: "We provide the We provide the We provide the fast web We provide the fast web ",
+    desc: "We specialize in creating dynamic CMS websites, delivering user-friendly and customizable solutions to efficiently manage and update web content.",
     img: cms,
   },
   {
     title: "UX Designs",
-    desc: "We provide the We provide the We provide the fast web We provide the fast web ",
+    desc: "We craft intuitive UX designs, prioritizing user experience to create engaging and seamless interactions for digital products and platforms.",
     img: ux,
   },
   {
     title: "Devops Setup",
-    desc: "We provide the We provide the We provide the fast web We provide the fast web ",
+    desc: "We establish efficient DevOps pipelines, streamlining development and deployment processes for enhanced collaboration, automation, and continuous integration.",
     img: devOps,
   },
   {
     title: "Web and App maintenance",
-    desc: "We provide the We provide the We provide the fast web We provide the fast web ",
+    desc: "We provide comprehensive web and app maintenance services, ensuring smooth functionality, security updates, and regular optimizations for seamless user experiences.",
     img: webAppMaintenance,
   },
 ];

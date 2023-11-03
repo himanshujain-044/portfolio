@@ -16,7 +16,7 @@ export const team = [
     name: "Himanshu",
     title: "Full Stack Developer and Team Manager",
     quote:
-      "Fingerstache umami squid, kinfolk subway tile selvage tumblr man braid viral kombucha gentrify fanny pack raclette pok pok mustache.",
+      "Dynamic team manager skilled in fostering a collaborative work environment, optimizing team performance, and driving project success. Works closely with a versatile full-stack developer, proficient in front-end and back-end technologies, ensuring efficient, scalable solutions and staying updated on industry best practices and emerging trends.",
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ export const team = [
     name: "Nitin",
     title: "Full Stack Developer and Team Lead",
     quote:
-      "Gastropub sustainable tousled prism occupy. Viral XOXO roof party brunch actually, chambray listicle microdosing put a bird on it paleo subway tile squid umami.",
+      "Versatile full-stack developer with expertise in both front-end and back-end technologies, dedicated to delivering efficient, scalable solutions while staying updated on industry trends and best practices. Also serves as a proactive team lead, adept at guiding and motivating team members, optimizing project workflows, and ensuring successful project delivery.",
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ export const team = [
     name: "Siddartha",
     title: "Full Stack Developer and Team Lead",
     quote:
-      "Drinking vinegar polaroid street art echo park, actually semiotics next level butcher master cleanse hammock flexitarian ethical paleo.",
+      "Versatile Full Stack Developer skilled in front-end and back-end technologies, proficient in creating efficient and scalable applications. Additionally, serves as a proactive Team Lead, adept at guiding and motivating team members, optimizing project workflows, and ensuring successful project delivery.",
   },
   {
     id: 4,
@@ -40,7 +40,7 @@ export const team = [
     name: "Shivam",
     title: "Devops Engineer",
     quote:
-      "Marfa af yr 3 wolf moon kogi, readymade distillery asymmetrical seitan kale chips fingerstache cloud bread mustache twee messenger bag. ",
+      "Skilled DevOps Engineer experienced in implementing and managing continuous integration and deployment processes. Proficient in automating, optimizing, and monitoring infrastructure, with a focus on streamlining development operations and ensuring the reliability and scalability of applications.",
   },
   {
     id: 5,
@@ -48,7 +48,7 @@ export const team = [
     name: "Jayant",
     title: "Full Stack Developer",
     quote:
-      "Marfa af yr 3 wolf moon kogi, readymade distillery asymmetrical seitan kale chips fingerstache cloud bread mustache twee messenger bag. ",
+      "Adaptable Full Stack Developer with proficiency in both front-end and back-end technologies. Committed to delivering robust and user-friendly applications, leveraging a deep understanding of development methodologies and programming languages to create efficient solutions.",
   },
   {
     id: 6,
@@ -56,7 +56,7 @@ export const team = [
     name: "Neeraj",
     title: "Full Stack Developer",
     quote:
-      "Marfa af yr 3 wolf moon kogi, readymade distillery asymmetrical seitan kale chips fingerstache cloud bread mustache twee messenger bag. ",
+      "Skilled Full Stack Developer with a comprehensive understanding of front-end and back-end technologies. Dedicated to crafting responsive and intuitive applications, combining technical expertise with a creative approach to deliver seamless user experiences and high-quality functionality.",
   },
   {
     id: 7,
@@ -64,7 +64,7 @@ export const team = [
     name: "Shrikant",
     title: "Full Stack Developer",
     quote:
-      "Marfa af yr 3 wolf moon kogi, readymade distillery asymmetrical seitan kale chips fingerstache cloud bread mustache twee messenger bag. ",
+      "Experienced Full Stack Developer proficient in a wide array of programming languages and frameworks. Committed to developing scalable and high-performance applications, with a keen eye for detail and a passion for innovation.",
   },
   {
     id: 8,
@@ -72,7 +72,7 @@ export const team = [
     name: "Rahul",
     title: "UX/UI Designer",
     quote:
-      "Marfa af yr 3 wolf moon kogi, readymade distillery asymmetrical seitan kale chips fingerstache cloud bread mustache twee messenger bag. ",
+      "Innovative UX/UI Designer with a keen eye for detail and a passion for creating engaging and intuitive digital experiences. Proficient in user research, wireframing, and prototyping, dedicated to delivering visually appealing designs that seamlessly integrate with user needs and preferences.",
   },
   //   {
   //     id: 4,

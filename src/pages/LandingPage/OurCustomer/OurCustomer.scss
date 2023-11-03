@@ -64,6 +64,8 @@
       }
       img {
         width: 64px;
+        height: 64px;
+        border-radius: 50%;
       }
     }
     &--cus-detail {
@@ -72,6 +74,7 @@
       margin-left: 1rem;
       span {
         font-weight: 400;
+        max-width: 100%;
       }
     }
     &--busines-type {

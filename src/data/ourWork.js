@@ -14,12 +14,12 @@ export const ourWork = [
     img: onlineTranscationMobApp,
   },
   {
-    title: "Cake Design Courses",
+    title: "Aditi Shukla Cakes and Desserts",
     works: ["UX", "Website"],
     img: cakeDesignCourses,
   },
   {
-    title: "EDC Admin Portals",
+    title: "Horizon EDC Admin Portals",
     works: ["Website"],
     img: edcAdminPortal,
   },

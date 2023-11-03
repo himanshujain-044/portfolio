@@ -4,16 +4,7 @@ import "./WorkedCompany.scss";
 import { sectionTitleFS } from "../../../utility/responsiveUI";
 import { useEffect, useState } from "react";
 import Counter from "../../../shared/components/Counter/Counter";
-
-const Company = ({ comDetails = {} }) => {
-  return (
-    <div className="wc-container__company">
-      {/* {comDetails.icon} */}
-      <img src={comDetails.icon} alt="" width="45px" />
-      <span>{comDetails.name}</span>
-    </div>
-  );
-};
+import WorkedCompanyCards from "../../../components/WorkedCompanyCards/WorkedCompanyCards";
 
 const WorkedCompany = () => {
   const [startCount, setStartCount] = useState(false);
@@ -39,17 +30,7 @@ const WorkedCompany = () => {
       >
         Trusted by many companies
       </Typography>
-
-      <div class="wc-container__scroll">
-        <div class="wc-container__m-scroll">
-          {companiesDetails.map((comDetails) => (
-            <Company comDetails={comDetails} />
-          ))}
-          {companiesDetails.map((comDetails) => (
-            <Company comDetails={comDetails} />
-          ))}
-        </div>
-      </div>
+      <WorkedCompanyCards companyDetails={companiesDetails} />
       {!startCount && (
         <div className="wc-container__counters">
           <Counter title="Completed Projects" number={0} />
