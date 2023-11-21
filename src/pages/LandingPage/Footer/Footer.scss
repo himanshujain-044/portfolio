@@ -47,6 +47,13 @@
         }
       }
     }
+    &--social-media-logos {
+      margin-top: 16px;
+      svg {
+        margin-right: 8px;
+        fill: $color-blue;
+      }
+    }
     .footer-animation-fourth {
       left: -100vw;
       position: relative;
@@ -102,6 +109,17 @@
         gap: 0.5rem;
         span {
           color: $text-dark-grey;
+        }
+      }
+      a {
+        text-decoration: none;
+        color: $text-dark-grey;
+        span {
+          display: flex;
+          gap: 4px;
+          svg {
+            fill: #25d366;
+          }
         }
       }
     }

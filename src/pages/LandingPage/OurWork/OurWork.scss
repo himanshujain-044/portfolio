@@ -46,6 +46,7 @@
           linear-gradient($color-white 0 0);
         mask-composite: exclude;
         -webkit-mask-composite: xor;
+        pointer-events: none;
       }
       h3,
       span {
@@ -67,6 +68,10 @@
         background-size: cover;
         border-radius: 2px;
       }
+    }
+    .read-more-work {
+      opacity: 0.5;
+      cursor: not-allowed;
     }
     .zoom-out-grid-box {
       animation: zoom-out 1.5s ease-in-out;

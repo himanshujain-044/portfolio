@@ -289,14 +289,14 @@ const ProjectForm = () => {
         </div>
         <div className="pf-container__map">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104539.28645736807!2d78.75666759481346!3d23.869657545199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3978d10b80a73f47%3A0xbc5da3db6a37f08a!2sMakroniya%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1693153455454!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.29049957387!2d75.90268837539703!3d22.7174414776459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962e2cdccae3a8b%3A0x7f0314c1e5a96972!2sGoyal%20Nagar%2C%20Indore%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1700231676105!5m2!1sen!2sin"
             width="500"
             height="100%"
             allowfullscreen=""
             style={{ border: "none" }}
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
-            title="Makronia Sagar, M.P"
+            title="Indore, M.P"
           ></iframe>
         </div>
       </div>

@@ -51,6 +51,7 @@
           linear-gradient($color-white 0 0);
         mask-composite: exclude;
         -webkit-mask-composite: xor;
+        pointer-events: none;
       }
       div {
         display: flex;
@@ -81,9 +82,33 @@
       color: $text-color-black;
       opacity: 0.7;
     }
+    &--more-info {
+      width: 100%;
+      justify-content: space-around !important;
+      padding: 2px 0;
+      margin-top: 2px;
+      background: $blue-gradient-theme;
+      border-radius: 4px;
+      color: #fff;
+    }
   }
 }
-
+.modal-content {
+  .about-customer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      height: 90px;
+      width: 90px;
+      border-radius: 50%;
+    }
+  }
+  .msg {
+    text-align: justify;
+    margin: 0.5rem 1rem;
+  }
+}
 @media only screen and (max-width: 1100px) {
   .oc-container__content {
     grid-template-columns: auto auto auto auto;
@@ -92,7 +117,7 @@
 
 @media only screen and (max-width: 900px) {
   .oc-container__content {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
   }
 }
 

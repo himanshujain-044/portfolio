@@ -40,8 +40,8 @@ const WorkedCompany = () => {
       )}
       {startCount && (
         <div className="wc-container__counters">
-          <Counter title="Completed Projects" number={447} />
-          <Counter title="Running Projects" number={15} />
+          <Counter title="Completed Projects" number={22} />
+          <Counter title="Running Projects" number={5} />
           <Counter
             title="Overall Clients Satisfaction"
             number={93}

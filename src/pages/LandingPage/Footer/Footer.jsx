@@ -1,8 +1,12 @@
 import { TextField } from "@mui/material";
 import ButtonComp from "../../../components/ButtonComp/ButtonComp";
-import { contactInfo, logos } from "../../../data/footer";
+import { contactInfo } from "../../../data/footer";
 import { useInView } from "react-intersection-observer";
 import cx from "classnames";
+import { WhatsApp } from "@mui/icons-material";
+import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import TwitterIcon from "@mui/icons-material/Twitter";
 import "./Footer.scss";
 
 const Footer = () => {
@@ -25,7 +29,10 @@ const Footer = () => {
             a company; we are your dedicated partners in the world of
             Information Technology.
           </p>
-          <h5>© 2022. All rights reserved by Madhuvan Digitals inc.</h5>
+          <h5>
+            © {new Date().getFullYear()}. All rights reserved by Madhuvan
+            Digitals inc.
+          </h5>
         </div>
         <div
           className={cx(
@@ -74,17 +81,28 @@ const Footer = () => {
               <ButtonComp text="Subscribe" />
             </div>
           </div>
-          <div style={{ marginTop: "16px" }}>
-            {logos.map((logo, index) => (
-              <img
-                src={logo}
-                key={index}
-                alt={index}
-                width="18"
-                height="18"
-                style={{ marginRight: "12px" }}
-              />
-            ))}
+          <div className="footer-container__detail--social-media-logos">
+            <a
+              href="https://www.facebook.com/profile.php?id=61551970517773"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FacebookOutlinedIcon />
+            </a>
+            <a
+              href="https://www.instagram.com/madhuvandigitalstech/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <InstagramIcon />
+            </a>
+            <a
+              href="https://twitter.com/madhuvandigital"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <TwitterIcon />
+            </a>
           </div>
         </div>
       </div>
@@ -106,6 +124,16 @@ const Footer = () => {
               <span>{item.text}</span>
             </div>
           ))}
+          <a
+            href="//api.whatsapp.com/send?phone=917470839972&text=I have the requirement can we schedule have a call"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span>
+              <WhatsApp />
+              Click to Whatsapp
+            </span>
+          </a>
         </div>
       </div>
     </div>
