@@ -39,6 +39,7 @@ const LandingView = () => {
             variant="h1"
             sx={{
               fontSize: landingView.titleFS,
+              letterSpacing: "2px",
             }}
           >
             Boost your business with us

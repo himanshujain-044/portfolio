@@ -11,7 +11,7 @@ const ServicesAndStrategies = () => {
   const [cardRef, inViewCard] = useInView({ threshold: 0 });
   const [strategiesRef, inViewStrategies] = useInView({ threshold: 0 });
   return (
-    <div className={"services-container"} ref={cardRef}>
+    <div className={"services-container"}>
       <Typography
         variant="h3"
         sx={{ fontSize: sectionTitleFS }}
@@ -36,6 +36,7 @@ const ServicesAndStrategies = () => {
           "services-container__grid",
           inViewCard && "cards-animation"
         )}
+        ref={cardRef}
       >
         {services.map((service) => {
           return (
