@@ -42,7 +42,7 @@ const LandingView = () => {
               letterSpacing: "2px",
             }}
           >
-            Boost your business with us
+            Boost your business
           </Typography>
         </div>
         <Typography
