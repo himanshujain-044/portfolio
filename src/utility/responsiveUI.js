@@ -17,8 +17,8 @@ export const header = {
   companyNameFS: {
     xs: "12px",
     sm: "14px",
-    md: "24px",
-    lg: "28px",
+    md: "18px",
+    lg: "22px",
   },
 };
 

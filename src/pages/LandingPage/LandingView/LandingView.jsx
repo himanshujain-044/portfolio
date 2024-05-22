@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import FlashOnRoundedIcon from "@mui/icons-material/FlashOnRounded";
+// import FlashOnRoundedIcon from "@mui/icons-material/FlashOnRounded";
 import landingViewImg from "../../../assets/images/landing-view.jpg";
-// import landingPageVideo from "../../../assets/videos/landing-page.mp4";
+import person from "../../../assets/images/person.png";
 import ButtonComp from "../../../components/ButtonComp/ButtonComp";
 import { Typography } from "@mui/material";
 import { landingView } from "../../../utility/responsiveUI";
@@ -33,7 +33,8 @@ const LandingView = () => {
       <div className={"lv-container__heading"} ref={titleRef}>
         <div className={inViewTitle && "title-animation"}>
           <span className="lv-container__heading--boost-icon">
-            <FlashOnRoundedIcon />
+            {/* <FlashOnRoundedIcon /> */}
+            <img src={person} alt="Person" />
           </span>
           <Typography
             variant="h1"
@@ -42,22 +43,30 @@ const LandingView = () => {
               letterSpacing: "2px",
             }}
           >
-            Boost your business
+            Who am I ?
           </Typography>
         </div>
+        <Typography
+          variant="h2"
+          sx={{
+            fontSize: { xs: "20px", sm: "20px", md: "24px", lg: "24px" },
+            letterSpacing: "2px",
+          }}
+          className={inViewTitle && "title-animation"}
+        >
+          Full Stack Developer - working in GSLab, Pune
+        </Typography>
         <Typography
           variant="h4"
           sx={{ fontSize: landingView.textFS }}
           className={inViewTitle && "title-animation"}
         >
-          We provides multiple services with effective cost and efficient code,
-          and we have the best engineer with us, who will full fill your all
-          needs.
+          Experienced Full Stack Developer with 3 years of expertise in
+          technologies such as ReactJS, NodeJS, and Angular. Successfully
+          delivered impactful solutions across 3 client projects.
         </Typography>
-        <div className="lv-container__heading--contact-btn">
-          <a href="#contact-us">
-            <ButtonComp text="Contact Us" />
-          </a>
+        <div className="lv-container__heading--resume-download-btn">
+          <ButtonComp text="Download Resume" />
         </div>
       </div>
     </div>

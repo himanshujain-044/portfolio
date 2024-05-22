@@ -23,8 +23,9 @@
     &--company-wrap {
       display: flex;
       align-items: center;
-      width: 45%;
-      gap: 8px;
+      width: fit-content;
+      white-space: nowrap;
+      gap: 12px;
       img {
         width: 32px;
       }
@@ -56,10 +57,16 @@
     &--options-opened {
       animation: options 2s;
       display: flex;
+      top: 2px;
     }
   }
   &__right {
     max-width: 20%;
+    cursor: pointer;
+    svg {
+      width: 1.3em;
+      height: 1.3em;
+    }
   }
 }
 @keyframes options {
@@ -89,6 +96,10 @@
   .header-container__left--options {
     top: -6px;
   }
+  .header-container__right svg {
+    width: 1em;
+    height: 1em;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -107,5 +118,9 @@
     a {
       font-size: 13px;
     }
+  }
+  .header-container__right svg {
+    width: 1em;
+    height: 1em;
   }
 }

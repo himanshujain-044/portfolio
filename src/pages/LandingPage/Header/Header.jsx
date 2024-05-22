@@ -36,7 +36,7 @@ const Header = () => {
             sx={{ fontSize: header.companyNameFS }}
             className="header-container__left--company-name"
           >
-            Madhuvan Digitals
+            Himanshu Jain's Portfolio
           </Typography>
         </div>
         <div className="header-container__left--options-wrap">
