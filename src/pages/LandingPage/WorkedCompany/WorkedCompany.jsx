@@ -1,5 +1,5 @@
 import { Typography } from "@mui/material";
-import { companiesDetails } from "../../../data/companiesDetails";
+import { projectsDetails } from "../../../data/projectsDetails";
 import "./WorkedCompany.scss";
 import { sectionTitleFS } from "../../../utility/responsiveUI";
 import { useEffect, useState } from "react";
@@ -28,9 +28,9 @@ const WorkedCompany = () => {
         sx={{ fontSize: sectionTitleFS }}
         className="wc-container__title"
       >
-        Trusted by many companies
+        Projects worked upon
       </Typography>
-      <WorkedCompanyCards companyDetails={companiesDetails} />
+      <WorkedCompanyCards companyDetails={projectsDetails} />
       {!startCount && (
         <div className="wc-container__counters">
           <Counter title="Completed Projects" number={0} />
@@ -40,11 +40,11 @@ const WorkedCompany = () => {
       )}
       {startCount && (
         <div className="wc-container__counters">
-          <Counter title="Completed Projects" number={22} />
-          <Counter title="Running Projects" number={5} />
+          <Counter title="Completed Projects" number={10} />
+          <Counter title="Running Projects" number={2} />
           <Counter
-            title="Overall Clients Satisfaction"
-            number={93}
+            title="Overall Manager and Client Satisfaction"
+            number={98}
             suffix="%"
           />
         </div>

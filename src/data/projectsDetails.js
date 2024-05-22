@@ -8,56 +8,50 @@ import woodWorks from "../assets/images/companiesWorked/wood-works.png";
 import horizon from "../assets/images/companiesWorked/horizon.png";
 import innometrics from "../assets/images/companiesWorked/innometrics.png";
 import primacare from "../assets/images/companiesWorked/primacare.png";
-import scality from "../assets/images/companiesWorked/scality.png";
-import thinksys from "../assets/images/companiesWorked/thinkink.png";
 
-export const companiesDetails = [
+export const projectsDetails = [
   {
-    name: "Sky Tours",
+    name: "Visual Factory",
     icon: skyTours,
   },
   {
-    name: "Brunchies",
-    icon: brunchies,
+    name: "A2O Transformation",
+    icon: skyTours,
   },
   {
-    name: "Evergrow",
-    icon: evergrow,
-  },
-  {
-    name: "Fixguru",
-    icon: fixguru,
-  },
-  {
-    name: "Garden Glow",
-    icon: gardenGlow,
-  },
-  {
-    name: "Think Ink",
-    icon: thinkink,
-  },
-  {
-    name: "Wood Works",
-    icon: woodWorks,
-  },
-  {
-    name: "Horizon",
-    icon: horizon,
-  },
-  {
-    name: "Innometrics",
+    name: "Brokearge Sharing",
     icon: innometrics,
   },
   {
-    name: "Primacare",
+    name: "Cake Design Courses",
     icon: primacare,
   },
   {
-    name: "Scality",
-    icon: scality,
+    name: "ISI Recertification",
+    icon: brunchies,
   },
   {
-    name: "Thinksys",
-    icon: thinksys,
+    name: "NICE - AngularJS to Angular 14",
+    icon: evergrow,
+  },
+  {
+    name: "Horizon EDC",
+    icon: horizon,
+  },
+  {
+    name: "Cloud Assistance",
+    icon: fixguru,
+  },
+  {
+    name: "ISV - 3 Web App",
+    icon: gardenGlow,
+  },
+  {
+    name: "Book My Seat",
+    icon: thinkink,
+  },
+  {
+    name: "Leave Planner",
+    icon: woodWorks,
   },
 ];

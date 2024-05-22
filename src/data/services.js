@@ -1,39 +1,45 @@
-import appDev from "../assets/images/app-dev.png";
-import webDev from "../assets/images/web-dev.png";
-import ux from "../assets/images/ux.png";
-import devOps from "../assets/images/devops.png";
-import cms from "../assets/images/cms.png";
-import webAppMaintenance from "../assets/images/web-and-app-maintenance.png";
+// import appDev from "../assets/images/app-dev.png";
+// import webDev from "../assets/images/web-dev.png";
+// import ux from "../assets/images/ux.png";
+// import devOps from "../assets/images/devops.png";
+// import cms from "../assets/images/cms.png";
+// import webAppMaintenance from "../assets/images/web-and-app-maintenance.png";
+import reactJS from "../assets/images/reactjs.png";
+import nodeJS from "../assets/images/nodejs.png";
+import angular from "../assets/images/angular.png";
+import redux from "../assets/images/redux.png";
+import mongoDB from "../assets/images/mongodb.png";
+import expressJS from "../assets/images/expressjs.png";
 
 export const services = [
   {
-    title: "Web Development",
-    desc: "We provide comprehensive web development services, specializing in custom solutions, utilizing the latest technologies and delivering tailored, impactful websites and applications.",
-    img: webDev,
+    title: "ReactJS",
+    desc: "I have 3.5 years of experience working on three projects based on ReactJS.",
+    img: reactJS,
   },
   {
-    title: "App Development",
-    desc: "We offer expert app development solutions, leveraging cutting-edge technologies to create customized, user-centric mobile applications for businesses and organizations.",
-    img: appDev,
+    title: "NodeJS",
+    desc: "My internship began with a focus on NodeJS, where I developed the Leave Planner application. Over the course of two years, I also contributed to various other projects, gaining extensive experience in the process.",
+    img: nodeJS,
   },
   {
-    title: "CMS Website Development",
-    desc: "We specialize in creating dynamic CMS websites, delivering user-friendly and customizable solutions to efficiently manage and update web content.",
-    img: cms,
+    title: "Angular",
+    desc: "I have worked on two projects and two proof-of-concepts (POCs) using Angular 14 from 2021 to 2023, accumulating 1.5 years of experience in the framework.",
+    img: angular,
   },
   {
-    title: "UX Designs",
-    desc: "We craft intuitive UX designs, prioritizing user experience to create engaging and seamless interactions for digital products and platforms.",
-    img: ux,
+    title: "MongoDB",
+    desc: "I have worked extensively with MongoDB, utilizing it in every Node.js application project, with 1.5 years of experience.",
+    img: mongoDB,
   },
   {
-    title: "Devops Setup",
-    desc: "We establish efficient DevOps pipelines, streamlining development and deployment processes for enhanced collaboration, automation, and continuous integration.",
-    img: devOps,
+    title: "Redux and Redux Toolkit",
+    desc: "I have 3 years of experience working with Redux and Redux Toolkit for managing global state.",
+    img: redux,
   },
   {
-    title: "Web and App maintenance",
-    desc: "We provide comprehensive web and app maintenance services, ensuring smooth functionality, security updates, and regular optimizations for seamless user experiences.",
-    img: webAppMaintenance,
+    title: "ExpressJS",
+    desc: "I have 2 years of experience using ExpressJS to create Node servers, manage routing and middleware as well.",
+    img: expressJS,
   },
 ];

@@ -1,7 +1,6 @@
 import "./WorkedCompanyCards.scss";
 
 const WorkedCompanyCards = ({ companyDetails = [], speed = 15000 }) => {
-  console.log("4", companyDetails);
   return (
     <div className="inner">
       <div className="wrapper">

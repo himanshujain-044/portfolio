@@ -20,7 +20,7 @@ const ServicesAndStrategies = () => {
           inViewCard && "animate-charcter"
         )}
       >
-        Services we offers
+        Technologies/Framework I explored
       </Typography>
       <p
         className={cx(
@@ -28,8 +28,9 @@ const ServicesAndStrategies = () => {
           inViewCard && "title-animation"
         )}
       >
-        We gives the services related to Web Development, App Development and
-        CMS related content with very effective and efficient way
+        I have explored various frameworks and technologies that support
+        JavaScript libraries and frameworks, and successfully integrated them
+        into my projects.
       </p>
       <div
         className={cx(
