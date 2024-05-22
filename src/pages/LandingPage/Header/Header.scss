@@ -93,8 +93,11 @@
       width: 28px;
     }
   }
-  .header-container__left--options {
-    top: 0px;
+  // .header-container__left--options {
+  //   top: 0px;
+  // }
+  .header-container__left--options-wrap {
+    top: 2px;
   }
   .header-container__right svg {
     width: 1em;
@@ -118,6 +121,10 @@
     a {
       font-size: 13px;
     }
+  }
+  .header-container__right {
+    position: relative;
+    top: 2px;
   }
   .header-container__right svg {
     width: 1em;
