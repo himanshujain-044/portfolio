@@ -13,7 +13,7 @@ const OurWork = () => {
       <div className="ow-container__info">
         <Typography
           variant="h3"
-          sx={{ fontSize: sectionTitleFS }}
+          sx={{ fontSize: sectionTitleFS, paddingTop: "4rem" }}
           className="ow-container__info--title"
         >
           Projects Worked Upon
