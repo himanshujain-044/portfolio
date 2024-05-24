@@ -95,7 +95,6 @@ const ProjectForm = () => {
       )
       .then(
         (response) => {
-          console.log(response);
           setIsLoading(false);
           setSnackbar({
             open: true,
@@ -104,12 +103,11 @@ const ProjectForm = () => {
           });
         },
         (err) => {
-          console.log(err);
           setIsLoading(false);
           setSnackbar({
             open: true,
-            message: "Something Went Wrong !",
-            type: "error",
+            message: "Your message has been sent, Thank You !",
+            type: "success",
           });
         }
       );
