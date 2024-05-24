@@ -48,9 +48,9 @@ const Header = () => {
             )}
           >
             <a href="#home">Home</a>
-            <a href="#work">Work</a>
-            <a href="#contact-us">Contact Us</a>
-            <a href="#about-us">About Us</a>
+            <a href="#projects">Projects</a>
+            <a href="#colleagues">Colleagues</a>
+            <a href="#send-message">Send Message</a>
           </div>
         </div>
       </div>

@@ -1,26 +1,27 @@
-import onlineTranscationMobApp from "../assets/images/online-transcation-mob-app.png";
-import fullAuthentication from "../assets/images/full-authentication.png";
 import cakeDesignCourses from "../assets/images/cake-design-courses.png";
-import edcAdminPortal from "../assets/images/admin-portal.png";
+import brokerageSharing from "../assets/images/brokerage-sharing.jpg";
+import a2o from "../assets/images/a2o.jpg";
+import angularJSToAngular from "../assets/images/angularjs-to-angular.jpg";
+
 export const ourWork = [
   {
-    title: "Authenticated Login Page",
-    works: ["Website"],
-    img: fullAuthentication,
-  },
-  {
-    title: "Food Delivery App",
-    works: ["Mobile App"],
-    img: onlineTranscationMobApp,
-  },
-  {
-    title: "Aditi Shukla Cakes and Desserts",
-    works: ["UX", "Website"],
+    title: "Cake Design Courses",
+    works: ["ReactJS", "Node"],
     img: cakeDesignCourses,
   },
   {
-    title: "Horizon EDC Admin Portals",
-    works: ["Website"],
-    img: edcAdminPortal,
+    title: "Brokerage Sharing",
+    works: ["ReactJS", "NodeJS"],
+    img: brokerageSharing,
+  },
+  {
+    title: "A2O",
+    works: ["ReactJS"],
+    img: a2o,
+  },
+  {
+    title: "AngularJs To Angular 14",
+    works: ["Angular"],
+    img: angularJSToAngular,
   },
 ];

@@ -20,7 +20,7 @@ const ServicesAndStrategies = () => {
           inViewCard && "animate-charcter"
         )}
       >
-        Technologies/Framework I explored
+        Technologies/Framework Explored
       </Typography>
       <p
         className={cx(
@@ -63,7 +63,7 @@ const ServicesAndStrategies = () => {
           sx={{ fontSize: sectionTitleFS }}
           className="services-container__strategies--title"
         >
-          Why Websols Software is best for you ?
+          My Strengths 
         </Typography>
         <div className="services-container__strategies--details">
           <div

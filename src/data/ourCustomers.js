@@ -1,54 +1,39 @@
-import atul from "../assets/images/atul.jpg";
-import aditi from "../assets/images/aditi.jpeg";
-import frame2 from "../assets/images/Frame-2.png";
-import frame3 from "../assets/images/Frame-3.png";
-// import kousal from "../assets/images/kousal.jpg";
-import atulAud from "../assets/audios/atul.mp3";
-import bradAud from "../assets/audios/brad.mp3";
-import aditiAud from "../assets/audios/aditi.mp3";
-import phaniAud from "../assets/audios/phani.mp3";
+import chandan from "../assets/images/chandan.png";
+import samarth from "../assets/images/samarth.png";
+import abhishek from "../assets/images/abhishek.png";
+import abhineshGour from "../assets/images/abhinesh-gour.png";
+
 export const ourCustomers = [
   {
-    name: "Atul Jain",
-    businessType: "E-Commerce",
-    profileImg: atul,
-    audio: atulAud,
+    name: "Chandan Jain",
+    position: "Senior Software Engineer - GS Lab",
+    profileImg: chandan,
     audioName: "atulAud",
     comment:
-      "The team delivered a stunning website that meets our expectations. Their attention to detail and prompt support made the entire process seamless. Highly recommended for anyone seeking top-notch web development services.",
+      "He was my first mentor when I started my career. He trained me on NodeJS, answering all our questions thoroughly during daily meetings. His friendly nature and supportive guidance were invaluable.",
   },
   {
-    name: "Brad Airf",
-    businessType: "Inegrated Web",
-    profileImg: frame2,
-    audio: bradAud,
+    name: "Smarth Anavatti",
+    position: "Senior Software Engineer - DDN",
+    profileImg: samarth,
     audioName: "bradAud",
     comment:
-      "Great job on the website/app. Really appreciate the timely updates and support whenever we needed it. Thanks for making the process hassle-free and delivering exactly what we needed.",
+      "He trained me on the Angular UI framework and guided me on giving updates in scrum, team communication, and client interactions. He never complained in meetings with senior management, but instead, provided constructive feedback privately. His guidance was invaluable.",
   },
   {
-    name: "Aditi Shukla",
-    businessType: "Education",
-    profileImg: aditi,
-    audio: aditiAud,
+    name: "Abhishek Jaryal",
+    position: "Senior Software Engineer - Mastercard",
+    profileImg: abhishek,
     audioName: "aditiAud",
     comment:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "He trained me on UI, but left the company a few months after I joined. I met him again in Pune, though we didn't interact much. Nonetheless, he is a good person and always willing to share his knowledge with others.",
   },
   {
-    name: "Phani",
-    businessType: "E-Commerce",
-    profileImg: frame3,
-    audio: phaniAud,
+    name: "Abhinesh Gour",
+    position: "Senior Software Engineer - Globant",
+    profileImg: abhineshGour,
     audioName: "phaniAud",
     comment:
-      "Efficient DevOps setup that has significantly improved our development processes. The team's expertise and support have been instrumental in streamlining our operations and enhancing overall efficiency. Happy with the results achieved so far.",
+      "He was always ready to answer my questions and taught me how to interact with new people in the organization. However, he left the company shortly after I joined GS Lab, so we didn't have much interaction. Despite that, he is a good person.",
   },
-  // {
-  //   name: "Tousal Khee",
-  //   businessType: "Admin Portal",
-  //   profileImg: kousal,
-  //   comment:
-  //     "Reliable maintenance service for our website/app. The team is quick to address any issues and ensures our platform runs smoothly. Appreciate the consistent support and attention to detail. Satisfied with the level of service provided.",
-  // },
 ];

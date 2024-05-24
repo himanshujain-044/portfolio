@@ -7,8 +7,8 @@ import { Typography } from "@mui/material";
 import { landingView } from "../../../utility/responsiveUI";
 import LoadingSpinner from "../../../components/LoadingSpinner/LoadingSpinner";
 import { useInView } from "react-intersection-observer";
-
 import "./LandingView.scss";
+
 const LandingView = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [titleRef, inViewTitle] = useInView();
@@ -66,7 +66,15 @@ const LandingView = () => {
           delivered impactful solutions across 3 client projects.
         </Typography>
         <div className="lv-container__heading--resume-download-btn">
-          <ButtonComp text="Download Resume" />
+          <ButtonComp
+            text="Download Resume"
+            onClickEvent={() => {
+              window.open(
+                "https://drive.usercontent.google.com/download?id=1nJi01UdsX_Z-_UrTtJZ_4PPB37tOwOnU&export=download&authuser=0",
+                "_blank"
+              );
+            }}
+          />
         </div>
       </div>
     </div>

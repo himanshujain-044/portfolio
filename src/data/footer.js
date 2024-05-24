@@ -25,6 +25,6 @@ export const logos = [fb, instagram, linkdin, email, twitter];
 
 export const contactInfo = [
   { text: "+91 8964969972", icon: phone },
-  { text: "	madhuvandigitalstech@gmail.com", icon: email },
-  { text: "Indore, M.P", icon: address },
+  { text: "	himanshujain044@gmail.com", icon: email },
+  { text: "Sagar, M.P", icon: address },
 ];

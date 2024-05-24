@@ -1,19 +1,19 @@
-import { TextField } from "@mui/material";
-import ButtonComp from "../../../components/ButtonComp/ButtonComp";
+// import { TextField } from "@mui/material";
+// import ButtonComp from "../../../components/ButtonComp/ButtonComp";
 import { contactInfo } from "../../../data/footer";
-import { useInView } from "react-intersection-observer";
+// import { useInView } from "react-intersection-observer";
 import cx from "classnames";
 import { WhatsApp } from "@mui/icons-material";
-import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import TwitterIcon from "@mui/icons-material/Twitter";
+// import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
+// import InstagramIcon from "@mui/icons-material/Instagram";
+// import TwitterIcon from "@mui/icons-material/Twitter";
 import "./Footer.scss";
 
 const Footer = () => {
-  const [footer, inViewFooter] = useInView({ threshold: 0 });
+  // const [footer, inViewFooter] = useInView({ threshold: 0 });
   return (
-    <div className="footer-container" id="about-us">
-      <div className="footer-container__detail" ref={footer}>
+    <div className="footer-container">
+      {/* <div className="footer-container__detail" ref={footer}>
         <div
           className={cx(
             "footer-container__detail--info",
@@ -105,16 +105,16 @@ const Footer = () => {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
       <hr />
-      <div className="footer-container__contact">
+      <div className={cx("footer-container__contact")}>
         <strong>
           <a
             href="https://goo.gl/maps/9RhJNJPY2LqWMBBw6"
             target="_blank"
             rel="noreferrer"
           >
-            Google Map Location
+            My Current Location
           </a>
         </strong>
         <div className="footer-container__contact--detail">
@@ -125,7 +125,7 @@ const Footer = () => {
             </div>
           ))}
           <a
-            href="//api.whatsapp.com/send?phone=917470839972&text=I have the requirement can we schedule have a call"
+            href="//api.whatsapp.com/send?phone=918964969972&text=Hi Himanshu"
             target="_blank"
             rel="noreferrer"
           >

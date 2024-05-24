@@ -18,7 +18,7 @@ function ModalContent({ data = {} }) {
         <div className="oc-container__content--cus-detail">
           <span>{data.name}</span>
           <span className="oc-container__content--busines-type">
-            {data.businessType}
+            {data.position}
           </span>
         </div>
       </div>
@@ -78,7 +78,7 @@ const OurCustomer = () => {
           sx={{ fontSize: sectionTitleFS }}
           className="oc-container__upperrpart--title"
         >
-          Hear what our customers say : )
+          My Mentors : )
         </Typography>
         <span className="oc-container__upperpart--icons">
           <span>
@@ -96,21 +96,27 @@ const OurCustomer = () => {
               <img src={customer.profileImg} alt={customer.name} />
               <div className="oc-container__content--cus-detail">
                 <span>{customer.name}</span>
-                <span className="oc-container__content--busines-type">
-                  {customer.businessType}
+                <span className="oc-container__content--position">
+                  {customer.position}
                 </span>
               </div>
             </div>
             <p>{customer.comment}</p>
-            <div className="oc-container__content--more-info">
-              <ReadMoreOutlinedIcon
-                aria-owns={open ? "popover" : undefined}
-                aria-haspopup="true"
-                onClick={(e) => {
-                  handleModalOpen(e, customer);
-                }}
-              />
-              {!playings[index] && (
+            <div
+              className="oc-container__content--more-info"
+              onClick={(e) => {
+                handleModalOpen(e, customer);
+              }}
+            >
+              <span className="oc-container__content--read-more">
+                <span>Read more</span>
+                <ReadMoreOutlinedIcon
+                  aria-owns={open ? "popover" : undefined}
+                  aria-haspopup="true"
+                />
+              </span>
+
+              {/* {!playings[index] && (
                 <PlayCircleOutlineOutlinedIcon
                   onClick={() => startAudio(index, customer.audioName)}
                 />
@@ -119,7 +125,7 @@ const OurCustomer = () => {
                 <PauseCircleOutlineOutlinedIcon
                   onClick={() => pauseAudio(index, customer.audioName)}
                 />
-              )}
+              )} */}
               <audio
                 src={customer.audio}
                 ref={audio[customer.audioName]}

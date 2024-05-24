@@ -39,7 +39,7 @@ function ImageSlider() {
         sx={{ fontSize: sectionTitleFS }}
         className="title"
       >
-        Top Guns
+        My Colleagues
       </Typography>
 
       <div className="section-center">

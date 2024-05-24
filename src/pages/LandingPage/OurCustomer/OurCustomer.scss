@@ -78,9 +78,10 @@
         max-width: 100%;
       }
     }
-    &--busines-type {
+    &--position {
       color: $text-color-black;
       opacity: 0.7;
+      font-size: 12px;
     }
     &--more-info {
       width: 100%;
@@ -90,6 +91,11 @@
       background: $blue-gradient-theme;
       border-radius: 4px;
       color: #fff;
+    }
+    &--read-more {
+      display: flex;
+      align-items: center;
+      gap: 4px;
     }
   }
 }

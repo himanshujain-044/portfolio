@@ -18,51 +18,51 @@ import { sectionTitleFS } from "../../../utility/responsiveUI";
 import CustomSnackbar from "../../../components/SnackbarComp/SnackbarComp";
 import ImageSlider from "../../../shared/components/ImageSlider/ImageSlider";
 
-const serviceType = [
-  {
-    text: "Mobile Application Development",
-    value: "mobileAppDev",
-  },
-  {
-    text: "Web Development",
-    value: "webDev",
-  },
-  {
-    text: "UI/UX",
-    value: "uiux",
-  },
-  {
-    text: "QA Service",
-    value: "qa",
-  },
-  {
-    text: "Other",
-    value: "other",
-  },
-];
+// const serviceType = [
+//   {
+//     text: "Mobile Application Development",
+//     value: "mobileAppDev",
+//   },
+//   {
+//     text: "Web Development",
+//     value: "webDev",
+//   },
+//   {
+//     text: "UI/UX",
+//     value: "uiux",
+//   },
+//   {
+//     text: "QA Service",
+//     value: "qa",
+//   },
+//   {
+//     text: "Other",
+//     value: "other",
+//   },
+// ];
 
-const requirementType = [
-  {
-    text: "Existing Project",
-    value: "existingProject",
-  },
-  {
-    text: "New Project",
-    value: "newProject",
-  },
-  {
-    text: "Hire Team",
-    value: "hireTeam",
-  },
-  {
-    text: "Support Maintenance",
-    value: "maintenance",
-  },
-  {
-    text: "Other",
-    value: "other",
-  },
-];
+// const requirementType = [
+//   {
+//     text: "Existing Project",
+//     value: "existingProject",
+//   },
+//   {
+//     text: "New Project",
+//     value: "newProject",
+//   },
+//   {
+//     text: "Hire Team",
+//     value: "hireTeam",
+//   },
+//   {
+//     text: "Support Maintenance",
+//     value: "maintenance",
+//   },
+//   {
+//     text: "Other",
+//     value: "other",
+//   },
+// ];
 const ProjectForm = () => {
   const [snackbar, setSnackbar] = useState({
     open: false,
@@ -95,14 +95,16 @@ const ProjectForm = () => {
       )
       .then(
         (response) => {
+          console.log(response);
           setIsLoading(false);
           setSnackbar({
             open: true,
-            message: "Your request has been sent, Thank You !",
+            message: "Your message has been sent, Thank You !",
             type: "success",
           });
         },
         (err) => {
+          console.log(err);
           setIsLoading(false);
           setSnackbar({
             open: true,
@@ -114,15 +116,16 @@ const ProjectForm = () => {
   };
 
   return (
-    <div className="pf-container" id="contact-us">
+    <div className="pf-container" id="colleagues">
       <ImageSlider />
       {snackbar.open && <CustomSnackbar message={snackbar.message} />}
       <Typography
         variant="h3"
-        sx={{ fontSize: sectionTitleFS }}
+        sx={{ fontSize: sectionTitleFS, paddingTop: "5rem" }}
         className="pf-container__title"
+        id="send-message"
       >
-        Get Ready to Start Project
+        Send Message
       </Typography>
       <div className="pf-container__content">
         <div className="pf-container__form">
@@ -141,7 +144,6 @@ const ProjectForm = () => {
               }}
             />
           </FormControl>
-
           <FormControl className="pf-container__form--input">
             <TextField
               id="email"
@@ -219,7 +221,7 @@ const ProjectForm = () => {
               />
             </FormControl>
           </div>
-          <FormControl className="pf-container__form--input">
+          {/* <FormControl className="pf-container__form--input">
             <InputLabel>Service Type</InputLabel>
             <Select
               labelId="service-type-label"
@@ -259,7 +261,7 @@ const ProjectForm = () => {
                 </MenuItem>
               ))}
             </Select>
-          </FormControl>
+          </FormControl> */}
 
           <FormControl className="pf-container__form--input">
             <TextareaAutosize
@@ -270,7 +272,7 @@ const ProjectForm = () => {
               label="Description"
               aria-describedby="description-helper-text"
               helperText={false && "Incorrect entry."}
-              placeholder="brief about the project..."
+              placeholder="Type your message here..."
               className="text-area-input"
               onChange={(e) => {
                 setAllFormValues((prev) => {
@@ -289,14 +291,14 @@ const ProjectForm = () => {
         </div>
         <div className="pf-container__map">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.29049957387!2d75.90268837539703!3d22.7174414776459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962e2cdccae3a8b%3A0x7f0314c1e5a96972!2sGoyal%20Nagar%2C%20Indore%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1700231676105!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14543.675575887624!2d79.10842884728922!3d24.3144640071282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397891fbbd2d8445%3A0xfc07490816a68eeb!2sShahgarh%2C%20Madhya%20Pradesh%20470339!5e0!3m2!1sen!2sin!4v1716549914888!5m2!1sen!2sin"
             width="500"
             height="100%"
             allowfullscreen=""
             style={{ border: "none" }}
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
-            title="Indore, M.P"
+            title="Shahgarh, M.P"
           ></iframe>
         </div>
       </div>
