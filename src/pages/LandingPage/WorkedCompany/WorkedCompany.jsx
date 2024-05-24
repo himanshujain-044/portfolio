@@ -44,7 +44,7 @@ const WorkedCompany = () => {
           <Counter title="Running Projects" number={2} />
           <Counter
             title="Overall Manager and Client Satisfaction"
-            number={98}
+            number={100}
             suffix="%"
           />
         </div>
