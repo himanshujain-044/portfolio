@@ -6,6 +6,7 @@ export default function LoadingSpinner({
   height = "100vh",
   width = "100%",
   size = 50,
+  progressbarProps = {},
 }) {
   return (
     <Box
@@ -17,7 +18,7 @@ export default function LoadingSpinner({
         alignItems: "center",
       }}
     >
-      <CircularProgress size={size} />
+      <CircularProgress size={size} {...progressbarProps} />
     </Box>
   );
 }

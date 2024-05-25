@@ -31,7 +31,7 @@ const LandingView = () => {
         <img src={landingViewImg} alt="" />
       </div>
       <div className={"lv-container__heading"} ref={titleRef}>
-        <div className={inViewTitle && "title-animation"}>
+        <div className={inViewTitle ? "title-animation" : ""}>
           <span className="lv-container__heading--boost-icon">
             {/* <FlashOnRoundedIcon /> */}
             <img src={person} alt="Person" />
@@ -52,14 +52,14 @@ const LandingView = () => {
             fontSize: { xs: "20px", sm: "20px", md: "24px", lg: "24px" },
             letterSpacing: "2px",
           }}
-          className={inViewTitle && "title-animation"}
+          className={inViewTitle ? "title-animation" : ""}
         >
           Full Stack Developer - working in GSLab, Pune
         </Typography>
         <Typography
           variant="h4"
           sx={{ fontSize: landingView.textFS }}
-          className={inViewTitle && "title-animation"}
+          className={inViewTitle ? "title-animation" : ""}
         >
           Experienced Full Stack Developer with 3 years of expertise in
           technologies such as ReactJS, NodeJS, and Angular. Successfully

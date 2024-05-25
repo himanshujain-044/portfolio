@@ -28,7 +28,7 @@ const WorkedCompany = () => {
         sx={{ fontSize: sectionTitleFS }}
         className="wc-container__title"
       >
-        Projects worked upon
+        Projects Worked Upon
       </Typography>
       <WorkedCompanyCards companyDetails={projectsDetails} />
       {!startCount && (
@@ -42,11 +42,7 @@ const WorkedCompany = () => {
         <div className="wc-container__counters">
           <Counter title="Completed Projects" number={10} />
           <Counter title="Running Projects" number={2} />
-          <Counter
-            title="Overall Manager and Client Satisfaction"
-            number={100}
-            suffix="%"
-          />
+          <Counter title="Overall Work Satisfaction" number={100} suffix="%" />
         </div>
       )}
     </div>

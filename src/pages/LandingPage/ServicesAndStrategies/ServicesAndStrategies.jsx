@@ -39,9 +39,9 @@ const ServicesAndStrategies = () => {
         )}
         ref={cardRef}
       >
-        {services.map((service) => {
+        {services.map((service, index) => {
           return (
-            <div className="services-container__grid--content">
+            <div className="services-container__grid--content" key={index}>
               <div>
                 <img src={service.img} alt={service.title} />
               </div>
@@ -63,7 +63,7 @@ const ServicesAndStrategies = () => {
           sx={{ fontSize: sectionTitleFS }}
           className="services-container__strategies--title"
         >
-          My Strengths 
+          My Strengths
         </Typography>
         <div className="services-container__strategies--details">
           <div
@@ -80,9 +80,9 @@ const ServicesAndStrategies = () => {
               inViewStrategies && "content-animation"
             )}
           >
-            {strategies.map((strategy) => {
+            {strategies.map((strategy, index) => {
               return (
-                <div>
+                <div key={index}>
                   <div>{strategy.icon}</div>
                   <h3>{strategy.title}</h3>
                 </div>

@@ -91,7 +91,7 @@ const OurCustomer = () => {
       </div>
       <div className="oc-container__content">
         {ourCustomers.map((customer, index) => (
-          <div className="oc-container__content--box">
+          <div className="oc-container__content--box" key={index}>
             <div>
               <img src={customer.profileImg} alt={customer.name} />
               <div className="oc-container__content--cus-detail">

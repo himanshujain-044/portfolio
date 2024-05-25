@@ -269,7 +269,6 @@ const ProjectForm = () => {
               color="neutral"
               label="Description"
               aria-describedby="description-helper-text"
-              helperText={false && "Incorrect entry."}
               placeholder="Type your message here..."
               className="text-area-input"
               onChange={(e) => {
@@ -292,10 +291,8 @@ const ProjectForm = () => {
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14543.675575887624!2d79.10842884728922!3d24.3144640071282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397891fbbd2d8445%3A0xfc07490816a68eeb!2sShahgarh%2C%20Madhya%20Pradesh%20470339!5e0!3m2!1sen!2sin!4v1716549914888!5m2!1sen!2sin"
             width="500"
             height="100%"
-            allowfullscreen=""
             style={{ border: "none" }}
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
             title="Shahgarh, M.P"
           ></iframe>
         </div>

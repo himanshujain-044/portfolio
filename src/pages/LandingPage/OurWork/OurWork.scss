@@ -69,9 +69,19 @@
         border-radius: 2px;
       }
     }
-    .read-more-work {
-      opacity: 0.5;
-      cursor: not-allowed;
+    .visit-website {
+      color: #1a2a3e;
+      svg {
+        fill: #1a2a3e;
+        border-color: #1a2a3e;
+      }
+      &:hover {
+        color: hsl(21, 62%, 45%);
+        svg {
+          fill: hsl(21, 62%, 45%);
+          border-color: hsl(21, 62%, 45%);
+        }
+      }
     }
     .zoom-out-grid-box {
       animation: zoom-out 1.5s ease-in-out;

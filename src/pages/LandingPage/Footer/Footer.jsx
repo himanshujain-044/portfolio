@@ -118,8 +118,8 @@ const Footer = () => {
           </a>
         </strong>
         <div className="footer-container__contact--detail">
-          {contactInfo.map((item) => (
-            <div>
+          {contactInfo.map((item, index) => (
+            <div key={index}>
               <img src={item.icon} alt="" width="18" />
               <span>{item.text}</span>
             </div>

@@ -14,7 +14,15 @@ const ButtonComp = ({
       onClick={onClickEvent}
       disabled={isDisabled}
     >
-      {hasLoading ? <LoadingSpinner height="8px" size={20} /> : text}
+      {hasLoading ? (
+        <LoadingSpinner
+          height="8px"
+          size={20}
+          progressbarProps={{ style: { color: "#fff" } }}
+        />
+      ) : (
+        text
+      )}
     </button>
   );
 };

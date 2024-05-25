@@ -32,9 +32,12 @@ const OurWork = () => {
         />
       </div>
       <div className="ow-container__work-grid">
-        {ourWork.map((work) => {
+        {ourWork.map((work, index) => {
           return (
-            <div className={gridBoxuseInView && "zoom-out-grid-box"}>
+            <div
+              className={gridBoxuseInView ? "zoom-out-grid-box" : ""}
+              key={index}
+            >
               <img src={work.img} alt={work.title} />
               <span>
                 {work.works.map((workType, index) => (
@@ -42,10 +45,19 @@ const OurWork = () => {
                 ))}
               </span>
               <h3>{work.title}</h3>
-              <span className="read-more-work">
-                Read More
-                <ArrowForwardOutlinedIcon />
-              </span>
+              {work.link ? (
+                <span
+                  className="visit-website"
+                  onClick={() => {
+                    window.open(work.link, "_blank");
+                  }}
+                >
+                  Visit Website
+                  <ArrowForwardOutlinedIcon />
+                </span>
+              ) : (
+                ""
+              )}
             </div>
           );
         })}

@@ -43,6 +43,12 @@
         min-height: 6rem !important;
         width: 98% !important;
         resize: vertical;
+        &:focus-within {
+          border-color: rgb(25, 118, 210);
+          outline: rgb(25, 118, 210);
+          outline-width: 2px;
+          border: 1px solid rgb(25, 118, 210);
+        }
       }
     }
     &--submit-btn {

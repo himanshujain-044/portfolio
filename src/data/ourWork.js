@@ -8,11 +8,13 @@ export const ourWork = [
     title: "Cake Design Courses",
     works: ["ReactJS", "Node"],
     img: cakeDesignCourses,
+    link: "https://cake-designs-courses.vercel.app/",
   },
   {
     title: "Brokerage Sharing",
     works: ["ReactJS", "NodeJS"],
     img: brokerageSharing,
+    link: "https://brokerage-sharing.vercel.app/",
   },
   {
     title: "A2O",
